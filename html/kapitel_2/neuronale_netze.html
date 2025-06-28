@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="de" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Neuronale Netze - Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Eine umfassende Analyse der KI-Revolution mit Fokus auf autonome Agenten - von den technischen Grundlagen bis zu gesellschaftlichen Auswirkungen und Zukunftsszenarien.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/heussers/ki-agenten-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="neuronale-netze-architektonische-evolution"><a class="header" href="#neuronale-netze-architektonische-evolution">Neuronale Netze: Architektonische Evolution</a></h2>
+<h3 id="von-der-inspiration-zur-revolution"><a class="header" href="#von-der-inspiration-zur-revolution">Von der Inspiration zur Revolution</a></h3>
+<p>Neuronale Netze begannen als vereinfachte Imitation biologischer Neuronen. Heute sind sie zu etwas geworden, das die Natur nie vorgesehen hat: <strong>Denkmaschinen, die anders denken als Menschen, aber oft besser.</strong></p>
+<h3 id="die-grundarchitektur"><a class="header" href="#die-grundarchitektur">Die Grundarchitektur</a></h3>
+<p>Frank Rosenblatt's Perzeptron (1957) war radikal in seiner Einfachheit: Eingaben, Gewichte, Aktivierungsfunktion und binäre Ausgabe. Die zentrale Erkenntnis: <strong>Lernen ist Gewichtsanpassung</strong>. Mit mehreren Schichten explodierten die Möglichkeiten - von der Rohdaten-Eingabe über versteckte Schichten zur Abstraktion bis zur finalen Entscheidung. Backpropagation (1986) machte das Training tiefer Netze möglich.</p>
+<h3 id="die-architektur-revolution"><a class="header" href="#die-architektur-revolution">Die Architektur-Revolution</a></h3>
+<h4 id="convolutional-neural-networks-cnns"><a class="header" href="#convolutional-neural-networks-cnns">Convolutional Neural Networks (CNNs)</a></h4>
+<p>Inspiriert vom visuellen Cortex revolutionierten CNNs 2012 mit AlexNet die Bilderkennung. Ihre Stärke liegt in lokaler Mustererkennung durch Convolutional Layers, Dimensionalitätsreduktion via Pooling und hierarchischen Features von Kanten zu Objekten. Parameter Sharing macht sie effizient, Translation Invariance ermöglicht Objekterkennung unabhängig von der Position.</p>
+<h4 id="recurrent-neural-networks-rnns"><a class="header" href="#recurrent-neural-networks-rnns">Recurrent Neural Networks (RNNs)</a></h4>
+<p>RNNs lösten das Sequenz-Problem durch Gedächtnis via Rückkopplung. LSTM (Long Short-Term Memory) mit Forget-, Input- und Output-Gates ermöglichte Sprachverarbeitung, Zeitreihenvorhersage und Musikgenerierung - bis Transformer sie ablösten.</p>
+<h4 id="transformer-die-finale-architektur"><a class="header" href="#transformer-die-finale-architektur">Transformer: Die finale Architektur</a></h4>
+<p><strong>"Attention Is All You Need" (2017)</strong> veränderte alles. Self-Attention lässt jedes Wort jedes andere beachten, parallel statt sequenziell. Diese GPU-optimierte Architektur skaliert mit Milliarden Parametern und funktioniert für Text, Bilder und Audio gleichermaßen.</p>
+<h3 id="emergenz-phänomene"><a class="header" href="#emergenz-phänomene">Emergenz-Phänomene</a></h3>
+<h4 id="scaling-laws"><a class="header" href="#scaling-laws">Scaling Laws</a></h4>
+<p>Performance steigt vorhersagbar mit Modellgröße, Datenumfang und Rechenleistung. Die GPT-Evolution zeigt dies deutlich: von 117 Millionen (GPT-1) über 175 Milliarden (GPT-3) bis zu geschätzten 1,8 Billionen Parametern (GPT-4).</p>
+<h4 id="emergente-fähigkeiten"><a class="header" href="#emergente-fähigkeiten">Emergente Fähigkeiten</a></h4>
+<p>Bei kritischen Größen entwickeln Modelle unerwartete Fähigkeiten: In-Context Learning ohne Training, mehrstufiges Chain-of-Thought Reasoning, Code-Generierung und multimodales Verständnis entstehen scheinbar "plötzlich" durch reine Skalierung.</p>
+<h3 id="moderne-architekturen"><a class="header" href="#moderne-architekturen">Moderne Architekturen</a></h3>
+<h4 id="mixture-of-experts-moe"><a class="header" href="#mixture-of-experts-moe">Mixture of Experts (MoE)</a></h4>
+<p>MoE löst das Größe-vs-Effizienz Problem durch selektive Aktivierung: Nur 10-20% der Parameter arbeiten gleichzeitig, während spezialisierte Experten verschiedene Aufgaben übernehmen. Dies ermöglicht Billionen-Parameter-Modelle bei vertretbarem Rechenaufwand.</p>
+<h4 id="neural-architecture-search-nas"><a class="header" href="#neural-architecture-search-nas">Neural Architecture Search (NAS)</a></h4>
+<p>KI entwirft KI-Architekturen: Algorithmen finden automatisch optimale Strukturen wie EfficientNet (bessere Performance, kleinere Größe) oder Vision Transformer als CNN-Alternative.</p>
+<h4 id="neuromorphic-computing"><a class="header" href="#neuromorphic-computing">Neuromorphic Computing</a></h4>
+<p>Inspiriert vom biologischen Gehirn versprechen Spiking Neural Networks auf spezieller Hardware 1000x weniger Stromverbrauch, Real-time Processing ohne Batch-Verarbeitung und Lernen zur Laufzeit.</p>
+<h3 id="philosophische-implikationen"><a class="header" href="#philosophische-implikationen">Philosophische Implikationen</a></h3>
+<p>Neuronale Netze ähneln Gehirnen durch vernetzte Neuronen, Lernen durch Erfahrung und emergente Intelligenz. Doch sie unterscheiden sich fundamental: diskrete statt analoge Signale, synchrone statt asynchrone Verarbeitung, statische statt dynamische Struktur.</p>
+<p>Das <strong>Alignment Problem</strong> stellt die kritische Frage: Was optimieren neuronale Netze wirklich? Modelle optimieren Trainingsfunktionen, aber interne Ziele können durch Mesa-Optimization von äußeren Zielen abweichen.</p>
+<h3 id="zukunft-der-architekturen"><a class="header" href="#zukunft-der-architekturen">Zukunft der Architekturen</a></h3>
+<p>Hybrid-Systeme kombinieren Neuro-Symbolic (Logik + Lernen), Quantum-Neural (Quantencomputing + KI) und Bio-Neural (lebende + künstliche Neuronen). Foundation Models versprechen generalisierte Intelligenz: ein Modell für tausend Anwendungen durch Transfer Learning und Few-Shot Adaptation.</p>
+<p>Gute Architekturen balancieren fünf Kriterien: Expressiveness für komplexe Funktionen, Effizienz bei Berechnung und Energie, Interpretierbarkeit für Menschen, Robustheit bei unerwarteten Eingaben und Skalierbarkeit über verschiedene Größen.</p>
+<p>Aktuelle Grenzen umfassen begrenzte Kontext-Fenster, Schwächen beim logischen Denken, mangelnde Verbindung zur realen Welt und hohen Energieverbrauch.</p>
+<h3 id="fazit-die-universelle-architektur"><a class="header" href="#fazit-die-universelle-architektur">Fazit: Die universelle Architektur</a></h3>
+<p><strong>Neuronale Netze sind die erste universelle Computational-Architektur der Menschheit.</strong> Sie können sehen, hören, sprechen, denken und handeln. Die nächste Evolution führt zu Architekturen, die nicht nur intelligent sind, sondern bewusst.</p>
+<p>McLuhan hatte recht: "Wir formen unsere Werkzeuge, und danach formen sie uns." <strong>Neuronale Netze formen bereits, wie wir denken.</strong></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../kapitel_2/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../kapitel_2/sprachmodelle.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../kapitel_2/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../kapitel_2/sprachmodelle.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

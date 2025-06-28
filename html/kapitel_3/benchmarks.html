@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="de" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Performance und Grenzen - Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Eine umfassende Analyse der KI-Revolution mit Fokus auf autonome Agenten - von den technischen Grundlagen bis zu gesellschaftlichen Auswirkungen und Zukunftsszenarien.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/heussers/ki-agenten-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="performance-und-grenzen-aktuelle-benchmarks-autonomer-agenten"><a class="header" href="#performance-und-grenzen-aktuelle-benchmarks-autonomer-agenten">Performance und Grenzen: Aktuelle Benchmarks autonomer Agenten</a></h2>
+<p><strong>Die erste Generation autonomer Agenten erreicht bereits beeindruckende Erfolgsraten</strong> - doch wie messen wir den Fortschritt in einer Technologie, die so komplex und vielseitig ist wie KI-Agenten?</p>
+<h3 id="swe-bench-der-goldstandard-für-code-agenten"><a class="header" href="#swe-bench-der-goldstandard-für-code-agenten">SWE-bench: Der Goldstandard für Code-Agenten</a></h3>
+<p>Das <strong>Software Engineering Benchmark (SWE-bench)</strong> etablierte sich als wichtigster Maßstab für Code-Agenten. Aktuelle Spitzenwerte: <strong>Claude 3.5 Sonnet (neue Version)</strong> 49%, <strong>OpenAI o1</strong> 48.9%, <strong>GPT-4o</strong> 38%, <strong>Claude 3.5 (original)</strong> 33.4%.</p>
+<p>Claude 3.5 kann praktisch jeden zweiten GitHub-Issue eigenständig lösen, versteht komplexe Codebases mit Millionen Zeilen und implementiert Features über mehrere Dateien. <strong>Einordnung:</strong> Menschen lösen 70-80% der Aufgaben - die besten Agenten erreichen bereits 2/3 der menschlichen Performance.</p>
+<h3 id="webarena-navigation-in-der-digitalen-welt"><a class="header" href="#webarena-navigation-in-der-digitalen-welt">WebArena: Navigation in der digitalen Welt</a></h3>
+<p><strong>WebArena</strong> testet komplexe Web-Aufgaben: Online-Shopping, Formular-Bearbeitung, Multi-Schritt Workflows und Informationssammlung aus verschiedenen Quellen. Aktuelle Spitzenwerte: <strong>GPT-4V</strong> 24.9%, <strong>Claude 3.5 Sonnet</strong> 22.6%, <strong>Gemini Pro 1.5</strong> 18.4%.</p>
+<p><strong>Herausforderung:</strong> Webseiten ändern sich ständig. Agenten müssen flexibel auf Layout-Änderungen, neue UI-Elemente und unerwartete Pop-ups reagieren.</p>
+<h3 id="gaia-generalist-intelligenz-im-test"><a class="header" href="#gaia-generalist-intelligenz-im-test">GAIA: Generalist-Intelligenz im Test</a></h3>
+<p><strong>General AI Assistant (GAIA)</strong> testet Allround-Fähigkeiten: Faktenwissen kombinieren, logisches Schließen über mehrere Schritte, Arbeit mit externen Tools und Interpretation mehrdeutiger Anfragen.</p>
+<p><strong>Ergebnisse:</strong> o1-preview erreicht 30.5%/14.5%/6.3% (Level 1-3), Claude 3.5 Sonnet 25.2%/12.1%/4.8%, während Menschen 92%/82%/71% schaffen - eine deutliche Lücke bei komplexen Allround-Aufgaben.</p>
+<h3 id="arc-agi-der-turing-test-für-intelligenz"><a class="header" href="#arc-agi-der-turing-test-für-intelligenz">ARC-AGI: Der Turing-Test für Intelligenz</a></h3>
+<p><strong>Der Abstraction and Reasoning Corpus (ARC-AGI)</strong> gilt als schwierigster Benchmark. <strong>OpenAI o3 (Dezember 2024)</strong> erreichte 87.5% - ein Durchbruch! Erstmals übertrifft ein KI-System den menschlichen Durchschnitt (85%), löst abstrakte Muster-Erkennungsaufgaben und zeigt emergente Reasoning-Fähigkeiten.</p>
+<p>Vorherige Systeme lagen deutlich zurück: GPT-4o 32%, Claude 3.5 Sonnet 21%, Gemini 1.5 Pro 17%.</p>
+<h2 id="grenzen-und-herausforderungen"><a class="header" href="#grenzen-und-herausforderungen">Grenzen und Herausforderungen</a></h2>
+<p><strong>Konsistenz-Problem:</strong> Agenten sind unvorhersagbar - die gleiche Aufgabe kann mal perfekt, mal überhaupt nicht gelöst werden. Eine E-Mail-Aufgabe wird einmal perfekt, einmal leer und einmal ohne CC-Empfänger ausgeführt.</p>
+<p><strong>Langzeit-Planung:</strong> Agenten verlieren bei komplexen, mehrstufigen Aufgaben den Fokus. Sie planen 5-10 Schritte gut, bei 20+ Schritten steigt die Fehlerrate dramatisch, sie vergessen Zwischenergebnisse und können nicht effektiv "rückspulen".</p>
+<p><strong>Kontextverständnis:</strong> Multi-Turn Konversationen bleiben herausfordernd. Nach einer detaillierten Q3-Verkaufsanalyse fragt der Agent bei "Vergleiche das mit dem Vorjahr" oft "Welche Verkaufszahlen meinen Sie?"</p>
+<h2 id="emerging-capabilities-was-sich-abzeichnet"><a class="header" href="#emerging-capabilities-was-sich-abzeichnet">Emerging Capabilities: Was sich abzeichnet</a></h2>
+<p><strong>Reasoning-Explosion:</strong> OpenAI o1 und o3 zeigen eine neue Klasse von Fähigkeiten durch längeres "Nachdenken", Selbst-Korrektur während der Problemlösung und Meta-Reasoning - Denken über das eigene Denken.</p>
+<p><strong>Computer Use:</strong> Claude 3.5 Sonnet erreicht 14.9% bei einfachen Aufgaben und 7.8% bei komplexen OS-Interaktionen (menschliche Vergleichswerte: 70-75%).</p>
+<p><strong>Tool Integration:</strong> Agenten werden besser bei API-Aufrufen mit korrekten Parametern, Verkettung mehrerer Tool-Aufrufe und Fehlerbehandlung bei Tool-Failures.</p>
+<h2 id="performance-faktoren"><a class="header" href="#performance-faktoren">Performance-Faktoren</a></h2>
+<p><strong>Überraschende Erkenntnis:</strong> Größere Modelle sind nicht automatisch bessere Agenten. Training-Qualität ist wichtiger als Parameter-Anzahl, specialized Fine-tuning für Agent-Tasks entscheidend, Constitutional AI verbessert Alignment und Reliability.</p>
+<p><strong>Prompt Engineering</strong> macht den Unterschied: Statt "Löse dieses Problem" funktioniert "Analysiere das Problem in Schritten: 1. Verstehe Anforderungen, 2. Plane Ansatz, 3. Führe aus und prüfe, 4. Korrigiere falls nötig" deutlich besser.</p>
+<p><strong>Memory und Kontext:</strong> Kontextlänge korreliert direkt mit Performance - 128k Token ermöglichen grundlegende Fähigkeiten, 1M+ Token komplexe mehrstufige Workflows, infinite Context könnte der Durchbruch für Langzeit-Aufgaben sein.</p>
+<h2 id="ausblick-die-nächsten-meilensteine"><a class="header" href="#ausblick-die-nächsten-meilensteine">Ausblick: Die nächsten Meilensteine</a></h2>
+<p><strong>2025 Prognosen:</strong> Erste Agenten erreichen 70%+ bei SWE-bench (menschliche Parität), 50%+ bei WebArena-Aufgaben und mehrere Systeme über 90% bei ARC-AGI (übermenschliche Performance).</p>
+<p><strong>Neue Benchmark-Kategorien</strong> entstehen: Real-World Impact Metrics messen echte Business-Problemlösung, wirtschaftlichen Wert automatisierter Aufgaben und User Satisfaction. Safety und Alignment bewerten "Rogue"-Verhalten, Selbsteinschätzung der Grenzen und Entscheidungstransparenz.</p>
+<h2 id="die-menschliche-perspektive"><a class="header" href="#die-menschliche-perspektive">Die menschliche Perspektive</a></h2>
+<p><strong>Dr. Yann LeCun, Meta AI:</strong> "Ein Agent mit 50% SWE-bench Performance ist kein 'halber Entwickler' - es ist ein völlig neues Tool, das manche Aufgaben perfekt löst und andere überhaupt nicht anfassen kann."</p>
+<p>Die aktuellen Benchmarks zeigen: <strong>Wir stehen am Anfang einer exponentiellen Entwicklung.</strong> Agenten, die heute bei 20-50% Performance liegen, könnten schon 2025 menschliche Experten in spezialisierten Bereichen übertreffen. **Die entscheidende Frage ist nicht mehr "ob", sondern "wann" und "wie schnell"."</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../kapitel_3/ecosystems.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../kapitel_3/multi_agent.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../kapitel_3/ecosystems.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../kapitel_3/multi_agent.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

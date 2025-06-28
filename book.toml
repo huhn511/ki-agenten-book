@@ -8,7 +8,8 @@ description = "Eine umfassende Analyse der KI-Revolution mit Fokus auf autonome 
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-git-repository-url = "https://github.com/heussers/ki-agenten-book"
+git-repository-url = "https://github.com/huhn511/ki-agenten-book"
+site-url = "/ki-agenten-book/"
 
 [output.pdf]
 optional = true

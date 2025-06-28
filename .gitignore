@@ -1,0 +1,24 @@
+# mdBook build outputs
+book/
+target/
+
+# Claude Code specific
+.claude
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Local configuration
+.vscode/
+.idea/

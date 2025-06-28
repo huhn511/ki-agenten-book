@@ -16,6 +16,11 @@ jobs:
         with:
           mdbook-version: "latest"
 
+      - name: Install mdbook-pdf (optional)
+        run: |
+          cargo install mdbook-pdf || echo "Failed to install mdbook-pdf, skipping PDF generation"
+        continue-on-error: true
+
       - run: git submodule update --init --recursive
       - run: mdbook build
 

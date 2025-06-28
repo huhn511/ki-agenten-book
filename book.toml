@@ -11,6 +11,7 @@ preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/heussers/ki-agenten-book"
 
 [output.pdf]
+optional = true
 scale = 0.7
 paper-width = 5.83
 paper-height = 8.27

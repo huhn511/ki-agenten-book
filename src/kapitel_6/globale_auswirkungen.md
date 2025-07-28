@@ -16,11 +16,35 @@
 
 ### Die Anatomie der Disruption
 
-**Hochrisiko (80-100% Automatisierungspotential):** Data Entry Clerks 95%, Telemarketing 99%, Tax Preparers 99%, Insurance Underwriters 99%, Bank Tellers 98%.
-
-**Mittleres Risiko (30-80%):** Accountants 70%, Paralegals 75%, Radiologists 65%, Financial Analysts 60%, Journalists 55%.
-
-**Niedriges Risiko (0-30%):** Elementary School Teachers 15%, Social Workers 10%, Therapists 5%, Creative Artists 10%, Emergency Responders 5%.
+```
+        📊 AUTOMATISIERUNGSRISIKO NACH BERUFSGRUPPEN 📊
+        
+   HOHES RISIKO (80-100%)          MITTLERES RISIKO (30-80%)      NIEDRIGES RISIKO (0-30%)
+   ┌─────────────────────┐         ┌─────────────────────┐         ┌─────────────────────┐
+   │ ████████████████████│99%      │ ██████████████      │70%      │ ███                 │15%
+   │ Telemarketing       │         │ Buchhalter          │         │ Grundschullehrer    │
+   │                     │         │                     │         │                     │
+   │ ███████████████████ │99%      │ ███████████████     │75%      │ ██                  │10%
+   │ Steuervorbereiter   │         │ Rechtsanwaltsfah.   │         │ Sozialarbeiter      │
+   │                     │         │                     │         │                     │
+   │ ███████████████████ │99%      │ █████████████       │65%      │ █                   │5%
+   │ Versicher.-Prüfer   │         │ Radiologen          │         │ Therapeuten         │
+   │                     │         │                     │         │                     │
+   │ ██████████████████  │98%      │ ████████████        │60%      │ ██                  │10%
+   │ Bank-Schalter       │         │ Finanzanalysten     │         │ Kreative Künstler   │
+   │                     │         │                     │         │                     │
+   │ ███████████████████ │95%      │ ███████████         │55%      │ █                   │5%
+   │ Datenerfassung      │         │ Journalisten        │         │ Notfallsanitäter    │
+   └─────────────────────┘         └─────────────────────┘         └─────────────────────┘
+   
+   ⚠️  ÜBERRASCHENDE GEFÄHRDUNGEN:                🛡️  RESILIENTE BERUFE:
+   ┌─────────────────────────────┐                ┌─────────────────────────────┐
+   │ 🖥️ Programmierer      48%    │                │ 🔧 Klempner           5%    │
+   │ ⚖️ Anwälte           35%    │                │ ✂️ Friseure           8%    │
+   │ 🩺 Ärzte             25%    │                │ 🛠️ Handwerker         12%   │
+   │ 👨‍🏫 Lehrer           20%    │                │ 💼 Manager            15%   │
+   └─────────────────────────────┘                └─────────────────────────────┘
+```
 
 **Die Überraschungen:** Programmers 48% Risiko (KI kann coden), Lawyers 35% (Legal AI), Doctors 25% (Diagnostic AI), Teachers 20% (AI Tutoring) versus resiliente Jobs wie Plumbers 5%, Hair Stylists 8%, Therapists 5%, Managers 15%.
 

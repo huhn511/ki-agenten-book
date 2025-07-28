@@ -8,6 +8,41 @@ Ein einziges ChatGPT-Query verbraucht **10x mehr Energie** als eine Google-Suche
 
 **Globaler KI-Energieverbrauch 2024:** 240 TWh jährlich (entspricht Argentinien), bereits 4% des weltweiten Stromverbrauchs mit Verdopplung alle 18 Monate. **Prognosen für 2030:** 945 TWh jährlich erwartet - 16% des weltweiten Stromverbrauchs, mehr als Deutschland und Frankreich kombiniert.
 
+```
+            🔋 KI-ENERGIEVERBRAUCH: EXPONENTIELLES WACHSTUM 🔋
+                          
+    2022 ████▌                           130 TWh (2.2% global)
+         
+    2023 ███████▌                        190 TWh (3.1% global)
+         
+    2024 ████████████                     240 TWh (4.0% global)
+         
+    2025 ████████████████████             380 TWh (6.3% global)
+         
+    2026 ██████████████████████████████   590 TWh (9.8% global)
+         
+    2027 ███████████████████████████████████████████████  730 TWh (12.1% global)
+         
+    2028 ██████████████████████████████████████████████████████  820 TWh (13.6% global)
+         
+    2029 ████████████████████████████████████████████████████████████  890 TWh (14.8% global)
+         
+    2030 ██████████████████████████████████████████████████████████████████  945 TWh (16.0% global)
+    
+    ┌──────────────────────────────────────────────────────────────────────────┐
+    │                        📊 VERGLEICHSWERTE                            │
+    │ 🇦🇷 Argentinien (2024): 240 TWh  │  🇩🇪 Deutschland: 545 TWh         │
+    │ 🇫🇷 Frankreich: 450 TWh          │  🇬🇧 Großbritannien: 300 TWh      │
+    │ 🇰🇷 Südkorea: 520 TWh            │  🇨🇦 Kanada: 640 TWh              │
+    └──────────────────────────────────────────────────────────────────────────┘
+    
+    ⚠️  KRITISCHE SCHWELLENWERTE:
+    • 2025: Übertrifft Großbritannien
+    • 2026: Übertrifft Frankreich  
+    • 2029: Übertrifft Deutschland
+    • 2030: Übertrifft Deutschland + Frankreich kombiniert
+```
+
 **Microsoft's KI-Infrastruktur** expandiert mit 20+ neuen Rechenzentren (2024), $50 Milliarden Investment in KI-Hardware und 300% Energieverbrauchssteigerung seit ChatGPT-Launch. **Google's Energy Footprint** zeigt 48% Anstieg durch KI (2023-2024), gefährdete Klimaziele und erstmals steigende CO2-Emissionen bei 10 Millionen Servern weltweit.
 
 ### Die Hardware-Realität

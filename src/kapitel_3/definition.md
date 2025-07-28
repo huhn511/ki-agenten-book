@@ -28,4 +28,59 @@ Der Agent würde Flüge recherchieren, Hotels basierend auf Lage und Bewertungen
 
 Bereits aktive Systeme umfassen OpenAI Operator (Browser-Navigation), Anthropic Computer Use (Desktop-Automatisierung), Microsoft Copilot Studio (Unternehmens-Workflows), Google Gemini Agents (multimodale Problemlösung) und Salesforce Agentforce (CRM und Kundenservice).
 
+```
+                🤖 KI-AGENTEN EVOLUTION ZEITLINIE 🤖
+
+1950s    BASIC AUTOMATION       🔧 Einfache Regelbasierte Systeme
+         |                         • Thermostate, Ampelsteuerung
+         |                         • Fest programmierte Wenn-Dann-Logik
+         |
+1960s    EARLY AI AGENTS        🧠 Erste KI-Experimente  
+         |                         • ELIZA (Gesprächsbot)
+         |                         • SHAKEY (Roboter mit Planung)
+         |
+1980s    EXPERT SYSTEMS         📚 Wissensbasierte Systeme
+         |                         • DENDRAL (Molekülanalyse)
+         |                         • MYCIN (Medizinische Diagnose)
+         |
+2000s    INTERNET AGENTS        🌐 Web-Services & Crawler
+         |                         • Suchmaschinen-Bots
+         |                         • E-Commerce Empfehlungen
+         |
+2010s    MOBILE ASSISTANTS      📱 Sprachgesteuerte Helfer
+         |                         • Siri, Alexa, Google Assistant
+         |                         • Begrenzte Domänen, Sprachverständnis
+         |
+2020     LLM-REVOLUTION         🚀 Große Sprachmodelle
+         |                         • GPT-3: Textverständnis & Generation
+         |                         • Durchbruch in Natürlicher Sprache
+         |
+2023     MULTIMODAL AGENTS      👁️ Sehen, Hören, Sprechen
+         |                         • GPT-4V: Vision + Sprache
+         |                         • Claude: Dokumenten-Analyse
+         |
+2024     AUTONOMOUS ACTION      🔥 Eigenständiges Handeln
+         |                         • Computer Use (Anthropic)
+         |                         • Code Interpreter (OpenAI)
+         |
+2025 ────AGENTIC AI ERA────     ⚡ Zielorientierte Autonomie
+         |                         • OpenAI Operator (Browser)
+         |                         • Microsoft Copilot Studio
+         |                         • Salesforce Agentforce
+         |
+2026+    AGENT ECOSYSTEMS       🌟 Kollaborative Multi-Agent-Systeme
+                                   • Spezialisierte Agent-Teams
+                                   • Automatisierte Workflows
+                                   • Agent-zu-Agent Kommunikation
+
+         ┌───────────────────────────────────────────────────────────┐
+         │                 🎯 ENTWICKLUNGSSPRÜNGE                   │
+         │                                                           │
+         │ 1950-2000: Regelbasiert → Wissensbasiert (50 Jahre)      │
+         │ 2000-2020: Web-Integration → Mobile AI (20 Jahre)        │
+         │ 2020-2025: LLM-Revolution → Autonome Agenten (5 Jahre)   │
+         │ 2025+: Agentic AI → Multi-Agent-Ökosysteme (?)          │
+         └───────────────────────────────────────────────────────────┘
+```
+
 **Die Realität:** Agenten arbeiten bereits in Millionen von Unternehmen und lösen echte Probleme. Der nächste Schritt: **Agent-Ökosysteme** mit spezialisierten Agenten, die zusammenarbeiten.

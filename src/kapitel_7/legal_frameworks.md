@@ -28,6 +28,55 @@ Das **EU AI Act** ist das erste umfassende KI-Gesetz der Welt und übertrifft mi
 
 ### Internationale Regulierungsansätze
 
+```
+             🌍 GLOBALE KI-REGULIERUNGS-LANDSCHAFT 🌍
+
+2019   │     ●                           ● ERSTE ETHIK-RICHTLINIEN
+       │                                   • OECD AI Principles
+       │                                   • Partnership on AI Tenets
+       │
+2020   │         ●─────────●             ● US EXECUTIVE ORDERS
+       │                                   • National AI Initiative
+       │                                   • NIST AI Framework
+       │
+2021   │     ●           ●               ● EU BEGINNT AI ACT
+       │                     ●             • Proposal Draft
+       │                                   • China: Algorithmic Mgmt
+       │
+2022   │                 ●               ● DEEPFAKE-REGULIERUNG
+       │             ●                     • China: Deep Synthesis
+       │                                   • US: State-Level Laws
+       │
+2023   │         ●   ●       ●           ● GENERATIVE AI FOCUS
+       │                         ●         • ChatGPT Global Impact
+       │                                   • EU AI Act Verhandlungen
+       │
+2024   │ ●           ●   ●   ●   ●       ● ENFORCEMENT BEGINNT
+       │                             ●     • EU AI Act verabschiedet
+       │                                   • US Executive Order 14110
+       │                                   • UK AI White Paper
+       │
+2025   ├─────────────────────────────────● VOLLSTÄNDIGE UMSETZUNG
+       │ ████████████████████████████████  • EU AI Act in Kraft
+       │                                   • Global Compliance Wave
+       │                                   • Strafverfolgung beginnt
+
+       EU ████████████████████████████████ STRENGSTE REGULIERUNG
+       USA ██████████████                  MARKT-ORIENTIERT
+       UK ████████████                     PRINZIPIEN-BASIERT
+       CHINA ██████████████████            STAAT-KONTROLLIERT
+       GLOBAL ████████                     MINIMALE STANDARDS
+
+       ┌──────────────────────────────────────────────────────────┐
+       │               🎯 REGULIERUNGS-ANSÄTZE                   │
+       │                                                          │
+       │ 🇪🇺 EU: Menschenrechte First, max. Bußgelder 35M€      │
+       │ 🇺🇸 USA: Innovation First, sektorspezifisch           │
+       │ 🇬🇧 UK: Flexibilität First, Sandbox-Modell           │
+       │ 🇨🇳 China: Kontrolle First, staatliche Aufsicht       │
+       └──────────────────────────────────────────────────────────┘
+```
+
 **USA: Innovationsfreundlich, marktorientiert** mit Executive Orders statt Gesetze, sektorspezifischer Regulierung, freiwilligen Selbstverpflichtungen, NIST AI Risk Management Framework.
 
 **China: Staatlich kontrolliert, sicherheitsorientiert** mit Algorithmic Recommendation Management Provisions, Deep Synthesis Provisions (Deepfake-Regulierung), Draft Measures for Generative AI Services, zentraler Kontrolle über KI-Entwicklung.

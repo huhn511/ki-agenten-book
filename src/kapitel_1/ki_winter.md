@@ -2,11 +2,23 @@
 
 ### Der erste Winter (1973-1980)
 
+**Cambridge, Massachusetts, 15. März 1973.** Dr. Richard Greenblatt sitzt in seinem Büro am MIT und starrt auf den Brief in seinen Händen. Nach fünf Jahren intensiver Arbeit an seinem Schachcomputer wird sein Labor geschlossen. Die Finanzierung: gestrichen. Der Grund: "Mangelnder Fortschritt Richtung echter Intelligenz."
+
+*"Fünf Jahre meines Lebens"*, murmelt er. *"Und wofür?"*
+
 Wie Agent Smith bemerkte, war das erste "perfekte" Programm ein Desaster. Die KI-Forschung der 1970er Jahre erlebte genau dieses Phänomen. Die überzogenen Versprechen der Dartmouth-Konferenz blieben spektakulär unerfüllt, und plötzlich trocknete die Finanzierung aus, als die Realität die Grenzen der damaligen Technologie offenbarte.
+
+**Die menschliche Tragödie:** Hunderte brillanter Forscher wie Greenblatt sahen ihre Karrieren zerstört. Viele wechselten frustriert in die Industrie oder andere Forschungsgebiete. Die psychologischen Narben prägten eine ganze Generation von Wissenschaftlern.
 
 Der **Lighthill-Report** von 1973 war vernichtend in seiner Kritik. Der britische Mathematiker James Lighthill argumentierte, dass KI-Systeme nur in "toy worlds" funktionierten und niemals die Komplexität der realen Welt bewältigen könnten. Das Scheitern hatte vier Hauptursachen: Die Computer der 1970er waren zu schwach, die Datensätze zu klein, die kombinatorische Explosion der Möglichkeiten zu groß, und die Hybris der Forscher hatte AGI-Versprechen in "10-20 Jahren" formuliert.
 
 ### Der zweite Winter (1987-2000)
+
+**Boston, 23. Oktober 1987.** Der Tag, den sie später "Schwarzer Freitag der KI" nennen würden. Thinking Machines Corporation, einst der Darling der Tech-Welt mit einer Bewertung von $700 Millionen, kündigt Massenentlassungen an. CEO Danny Hillis, der visionäre Gründer, steht vor 400 Mitarbeitern:
+
+*"Wir haben an die Zukunft geglaubt. Aber die Zukunft kam zu früh."*
+
+In den nächsten 18 Monaten werden 85% der KI-Startups bankrott gehen. Familien verlieren ihre Häuser. Ingenieure werden zu Taxifahrern. Der Traum von künstlicher Intelligenz wird zum Albtraum für Tausende.
 
 Paradoxerweise wurde der zweite KI-Winter durch einen Erfolg ausgelöst. Expertensysteme erlebten in den 1980er Jahren einen gewaltigen Boom, und Unternehmen investierten Millionen in regelbasierte Systeme, die menschliches Fachwissen nachahmen sollten. Das Problem lag in ihrer **brittle Architektur**: Sie funktionierten perfekt in ihrem spezifischen Bereich, brachen aber bei der kleinsten Abweichung vollständig zusammen.
 
@@ -17,6 +29,16 @@ Das Paradebeispiel war **R1/XCON** von Digital Equipment Corporation, ein System
 Die KI-Winter lehrten der Forschungsgemeinschaft vier entscheidende Lektionen: Bescheidenheit statt überzogener Versprechen, Empirismus statt reine Theorie, Robustheit statt fragile Spezialisierung, und datengetriebenes Lernen statt starre Regelsysteme. Diese Erkenntnisse prägen die KI-Entwicklung bis heute.
 
 ### Die stille Renaissance (2000-2012)
+
+**Toronto, Winter 2004.** Geoffrey Hinton sitzt allein in seinem Labor. Draußen schneit es. Drinnen ist es kalt – die Universität hat die Heizung in seinem Gebäude reduziert, um Kosten zu sparen. Niemand interessiert sich mehr für neuronale Netze.
+
+*"Geoff, gib's auf"*, hatte sein Kollege gesagt. *"Neural Networks sind tot. Mach was Sinnvolles mit deinem Leben."*
+
+Aber Hinton macht weiter. Tag für Tag. Jahr für Jahr. Seine Studenten nennen ihn liebevoll "den letzten Gläubigen". Fünf seiner besten Doktoranden wechseln zu anderen Themen. Er bleibt.
+
+**2006: Der Durchbruch.** Hintons Paper über Deep Belief Networks elektrisiert die kleine verbliebene KI-Community. Plötzlich funktionieren neuronale Netze. Nach 20 Jahren in der Wüste.
+
+*"Ich wusste, sie würden zurückkommen"*, sagt Hinton später. *"Aber ehrlich? Manchmal, in den dunklen Nächten, hatte auch ich Zweifel."*
 
 Während die Medien noch über den "KI-Winter" berichteten, begann bereits eine stille Revolution. Support Vector Machines revolutionierten das maschinelle Lernen, probabilistische Modelle ersetzten deterministische Regeln, und Ensemble-Methoden wie Random Forests zeigten, dass viele schwache Lerner zusammen stark sein können.
 

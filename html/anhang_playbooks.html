@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html lang="de" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Anhang: Branchenspezifische Agent-Playbooks - KI-Agenten: Die Billion-Euro-Maschinen</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Wie autonome Systeme Märkte revolutionieren - und wie Sie profitieren. Der Business-Guide zur größten Wirtschaftsrevolution unserer Zeit.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">KI-Agenten: Die Billion-Euro-Maschinen</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/huhn511/ki-agenten-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="anhang-branchenspezifische-agent-playbooks"><a class="header" href="#anhang-branchenspezifische-agent-playbooks">Anhang: Branchenspezifische Agent-Playbooks</a></h1>
+<h2 id="finanzsektor-der-weg-zur-autonomen-bank"><a class="header" href="#finanzsektor-der-weg-zur-autonomen-bank">Finanzsektor: Der Weg zur autonomen Bank</a></h2>
+<h3 id="die-top-5-finance-agents"><a class="header" href="#die-top-5-finance-agents">Die Top-5 Finance Agents</a></h3>
+<p><strong>1. Compliance-Agent "REGULA"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: EU-Regulierung in Echtzeit überwachen</li>
+<li><strong>ROI</strong>: 78% weniger Compliance-Verstöße</li>
+<li><strong>Beispiel</strong>: Deutsche Bank spart €4,2M Strafzahlungen/Jahr</li>
+</ul>
+<p><strong>2. Risk-Assessment-Agent "SENTINEL"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Kreditrisiken in 3 Sekunden bewerten</li>
+<li><strong>ROI</strong>: 45% genauere Risikoeinschätzung</li>
+<li><strong>Quick Win</strong>: Start mit Privatkrediten unter €50k</li>
+</ul>
+<p><strong>3. Fraud-Detection-Agent "GUARDIAN"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Betrugsmuster in Millisekunden erkennen</li>
+<li><strong>ROI</strong>: €8,7M verhinderte Betrugsfälle (Commerzbank 2024)</li>
+<li><strong>Erfolgsrezept</strong>: Lernt aus globalen Betrugsmustern</li>
+</ul>
+<p><strong>4. Customer-Service-Agent "FELIX"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: 24/7 Kundenberatung in 47 Sprachen</li>
+<li><strong>ROI</strong>: 67% First-Contact-Resolution</li>
+<li><strong>Warnung</strong>: Niemals Investmentberatung ohne Menschen!</li>
+</ul>
+<p><strong>5. Trading-Support-Agent "MERCURY"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Marktanalysen in Echtzeit</li>
+<li><strong>ROI</strong>: 23% bessere Trading-Entscheidungen</li>
+<li><strong>Regulierung</strong>: MiFID II-konform implementieren</li>
+</ul>
+<h3 id="der-90-tage-finanz-fahrplan"><a class="header" href="#der-90-tage-finanz-fahrplan">Der 90-Tage-Finanz-Fahrplan</a></h3>
+<p><strong>Tage 1-30</strong>: Compliance-Agent für Basis-Regelwerke
+<strong>Tage 31-60</strong>: Risk-Assessment für Standard-Produkte
+<strong>Tage 61-90</strong>: Multi-Agent-System aktivieren</p>
+<hr />
+<h2 id="gesundheitswesen-digitale-assistenten-retten-leben"><a class="header" href="#gesundheitswesen-digitale-assistenten-retten-leben">Gesundheitswesen: Digitale Assistenten retten Leben</a></h2>
+<h3 id="die-top-5-healthcare-agents"><a class="header" href="#die-top-5-healthcare-agents">Die Top-5 Healthcare Agents</a></h3>
+<p><strong>1. Diagnose-Agent "HIPPOCRATES"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Symptome analysieren, Differentialdiagnosen</li>
+<li><strong>ROI</strong>: 34% schnellere Erstdiagnose</li>
+<li><strong>Beispiel</strong>: Charité Berlin - 127 Leben gerettet 2024</li>
+</ul>
+<p><strong>2. Dokumentations-Agent "SCRIBE"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Patientenakten in Echtzeit führen</li>
+<li><strong>ROI</strong>: 2,5 Std/Tag Zeitersparnis pro Arzt</li>
+<li><strong>Datenschutz</strong>: DSGVO-konform mit Verschlüsselung</li>
+</ul>
+<p><strong>3. Medikations-Agent "PHARMA"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Wechselwirkungen prüfen, Dosierung optimieren</li>
+<li><strong>ROI</strong>: 89% weniger Medikationsfehler</li>
+<li><strong>Integration</strong>: Direkt mit Apotheken-Systemen</li>
+</ul>
+<p><strong>4. Pflege-Agent "FLORENCE"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Pflegeplanung und Überwachung</li>
+<li><strong>ROI</strong>: 45 Min/Patient/Tag eingespart</li>
+<li><strong>Menschlichkeit</strong>: Ergänzt, ersetzt nie menschliche Zuwendung</li>
+</ul>
+<p><strong>5. Termin-Agent "SCHEDULER"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Optimale Ressourcenplanung</li>
+<li><strong>ROI</strong>: 23% höhere Auslastung, 67% weniger No-Shows</li>
+<li><strong>Trick</strong>: Persönliche Erinnerungen steigern Termintreue</li>
+</ul>
+<h3 id="der-gesundheits-transformationsplan"><a class="header" href="#der-gesundheits-transformationsplan">Der Gesundheits-Transformationsplan</a></h3>
+<p><strong>Sofort</strong>: Dokumentations-Agent reduziert Bürokratie
+<strong>30 Tage</strong>: Termin-Agent optimiert Abläufe
+<strong>90 Tage</strong>: Diagnose-Agent als Zweitmeinung</p>
+<hr />
+<h2 id="produktion-die-fabrik-der-zukunft"><a class="header" href="#produktion-die-fabrik-der-zukunft">Produktion: Die Fabrik der Zukunft</a></h2>
+<h3 id="die-top-5-manufacturing-agents"><a class="header" href="#die-top-5-manufacturing-agents">Die Top-5 Manufacturing Agents</a></h3>
+<p><strong>1. Quality-Control-Agent "INSPECTOR"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Optische Qualitätsprüfung in Echtzeit</li>
+<li><strong>ROI</strong>: 94% Fehlerreduktion</li>
+<li><strong>Beispiel</strong>: BMW - 0,001% Ausschussrate</li>
+</ul>
+<p><strong>2. Predictive-Maintenance-Agent "PROPHET"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Ausfälle 72 Std vorher erkennen</li>
+<li><strong>ROI</strong>: €3,4M gesparte Ausfallzeiten (Siemens)</li>
+<li><strong>Sensor-Integration</strong>: IoT-Daten in Echtzeit</li>
+</ul>
+<p><strong>3. Supply-Chain-Agent "LOGISTICS"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Lieferketten global optimieren</li>
+<li><strong>ROI</strong>: 34% Lagerkosten-Reduktion</li>
+<li><strong>Krisenfest</strong>: Alternative Routen in 3 Sekunden</li>
+</ul>
+<p><strong>4. Energy-Optimization-Agent "WATTS"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Energieverbrauch minimieren</li>
+<li><strong>ROI</strong>: 23% Energiekosten gespart</li>
+<li><strong>Nachhaltigkeit</strong>: CO₂-Fußabdruck um 31% reduziert</li>
+</ul>
+<p><strong>5. Production-Planning-Agent "MAESTRO"</strong></p>
+<ul>
+<li><strong>Aufgabe</strong>: Produktionsabläufe orchestrieren</li>
+<li><strong>ROI</strong>: 18% höherer Durchsatz</li>
+<li><strong>Flexibilität</strong>: Umplanung in Minuten statt Tagen</li>
+</ul>
+<h3 id="die-smart-factory-evolution"><a class="header" href="#die-smart-factory-evolution">Die Smart-Factory-Evolution</a></h3>
+<p><strong>Woche 1</strong>: Quality-Control für kritische Komponenten
+<strong>Monat 1</strong>: Predictive Maintenance verhindert Ausfälle
+<strong>Quartal 1</strong>: Vollintegriertes Agent-Ökosystem</p>
+<hr />
+<h2 id="universelle-erfolgsformel"><a class="header" href="#universelle-erfolgsformel">Universelle Erfolgsformel</a></h2>
+<h3 id="die-3-phasen-jeder-agent-implementation"><a class="header" href="#die-3-phasen-jeder-agent-implementation">Die 3 Phasen jeder Agent-Implementation</a></h3>
+<p><strong>Phase 1: Pilot (30 Tage)</strong></p>
+<ul>
+<li>Ein Agent, ein Prozess, messbare KPIs</li>
+<li>Erfolg definieren: Zeit, Geld, Qualität</li>
+<li>Klein starten, schnell lernen</li>
+</ul>
+<p><strong>Phase 2: Scale (60 Tage)</strong></p>
+<ul>
+<li>Erfolgreiche Agents multiplizieren</li>
+<li>Agent-zu-Agent-Kommunikation</li>
+<li>Erste Effizienzgewinne realisieren</li>
+</ul>
+<p><strong>Phase 3: Transform (90+ Tage)</strong></p>
+<ul>
+<li>Unternehmenskultur anpassen</li>
+<li>Neue Geschäftsmodelle entwickeln</li>
+<li>Wettbewerbsvorteile ausbauen</li>
+</ul>
+<h3 id="die-häufigsten-fehler-und-wie-sie-sie-vermeiden"><a class="header" href="#die-häufigsten-fehler-und-wie-sie-sie-vermeiden">Die häufigsten Fehler (und wie Sie sie vermeiden)</a></h3>
+<p><strong>Fehler 1: Zu viele Agents gleichzeitig</strong>
+→ Lösung: Ein Agent nach dem anderen</p>
+<p><strong>Fehler 2: Keine Mitarbeiter-Integration</strong>
+→ Lösung: Employees zu Agent-Trainern machen</p>
+<p><strong>Fehler 3: Unrealistische ROI-Erwartungen</strong>
+→ Lösung: 6-Monats-Horizont planen</p>
+<p><strong>Fehler 4: Compliance ignorieren</strong>
+→ Lösung: Regulierung von Anfang an einplanen</p>
+<p><strong>Die goldene Regel:</strong> Agents ergänzen Menschen, sie ersetzen sie nicht. Der erfolgreichste Einsatz entsteht, wenn menschliche Kreativität auf maschinelle Effizienz trifft.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="epilog/outro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="monday_morning_action.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="epilog/outro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="monday_morning_action.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

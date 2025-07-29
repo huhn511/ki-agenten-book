@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html lang="de" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Einwände &amp; Antworten - KI-Agenten: Die Billion-Euro-Maschinen</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Wie autonome Systeme Märkte revolutionieren - und wie Sie profitieren. Der Business-Guide zur größten Wirtschaftsrevolution unserer Zeit.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">KI-Agenten: Die Billion-Euro-Maschinen</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/huhn511/ki-agenten-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="einwände--antworten-ki-agenten-erfolgreich-verteidigen"><a class="header" href="#einwände--antworten-ki-agenten-erfolgreich-verteidigen">Einwände &amp; Antworten: KI-Agenten erfolgreich verteidigen</a></h1>
+<h2 id="-die-top-10-einwände-und-wie-sie-kontern"><a class="header" href="#-die-top-10-einwände-und-wie-sie-kontern">🛡️ Die Top 10 Einwände (und wie Sie kontern)</a></h2>
+<h3 id="1-das-ist-zu-teuer"><a class="header" href="#1-das-ist-zu-teuer">1. "Das ist zu teuer!"</a></h3>
+<p><strong>Der Einwand:</strong> "Wir haben kein Budget für KI-Experimente."</p>
+<p><strong>Ihre Antwort:</strong>
+"Verstehe ich. Lassen Sie uns die Kosten des Nicht-Handelns berechnen:</p>
+<ul>
+<li>Aktuell verschwenden wir €[X]k/Jahr mit manuellen Prozessen</li>
+<li>Ein 90-Tage-Pilot kostet €15k</li>
+<li>Break-even nach 4 Monaten</li>
+<li>Danach reiner Gewinn</li>
+</ul>
+<p>Können wir es uns leisten, das NICHT zu tun?"</p>
+<p><strong>Power-Move:</strong> ROI-Rechnung live vorführen.</p>
+<hr />
+<h3 id="2-ki-wird-unsere-jobs-vernichten"><a class="header" href="#2-ki-wird-unsere-jobs-vernichten">2. "KI wird unsere Jobs vernichten!"</a></h3>
+<p><strong>Der Einwand:</strong> "Die Mitarbeiter haben Angst vor Jobverlust."</p>
+<p><strong>Ihre Antwort:</strong>
+"Das verstehe ich völlig. Aber schauen Sie sich die Fakten an:</p>
+<ul>
+<li>92% der Jobs werden transformiert, nicht ersetzt</li>
+<li>Mitarbeiter werden von Routine befreit für wertvollere Aufgaben</li>
+<li>Unternehmen mit KI stellen 15% MEHR Leute ein</li>
+<li>Wir investieren in Upskilling, nicht in Downsizing</li>
+</ul>
+<p>Die Frage ist: Wollen Ihre Mitarbeiter Excel-Sklaven bleiben oder strategische Partner werden?"</p>
+<p><strong>Power-Move:</strong> Success Story von Siemens zeigen (mehr Jobs nach KI).</p>
+<hr />
+<h3 id="3-das-ist-nur-ein-hype"><a class="header" href="#3-das-ist-nur-ein-hype">3. "Das ist nur ein Hype!"</a></h3>
+<p><strong>Der Einwand:</strong> "KI ist überhyped, das ebbt wieder ab."</p>
+<p><strong>Ihre Antwort:</strong>
+"Interessanter Punkt. Aber:</p>
+<ul>
+<li>Microsoft investiert $100 Milliarden - glauben Sie, die sind naiv?</li>
+<li>75% der Fortune 500 nutzen bereits KI-Agenten</li>
+<li>EU reguliert mit AI Act - reguliert man Hypes?</li>
+<li>Unsere Konkurrenz [Name] spart bereits €2M/Jahr</li>
+</ul>
+<p>Hype oder nicht - die Ergebnisse sind real."</p>
+<p><strong>Power-Move:</strong> Konkurrenz-Beispiel mit konkreten Zahlen.</p>
+<hr />
+<h3 id="4-unsere-daten-sind-zu-sensibel"><a class="header" href="#4-unsere-daten-sind-zu-sensibel">4. "Unsere Daten sind zu sensibel!"</a></h3>
+<p><strong>Der Einwand:</strong> "Datenschutz/Compliance macht das unmöglich."</p>
+<p><strong>Ihre Antwort:</strong>
+"Absolut richtig, Datenschutz ist kritisch. Deshalb:</p>
+<ul>
+<li>On-Premise-Lösungen verfügbar (keine Cloud)</li>
+<li>EU AI Act-konforme Anbieter</li>
+<li>Verschlüsselung &amp; Audit-Trails Standard</li>
+<li>Deutsche Anbieter mit DSGVO-Garantie</li>
+</ul>
+<p>Würden Sie einem System vertrauen, das SICHERER ist als Ihre aktuelle Excel-Hölle?"</p>
+<p><strong>Power-Move:</strong> Compliance-Zertifikate zeigen.</p>
+<hr />
+<h3 id="5-wir-haben-schon-it-projekte-die-scheitern"><a class="header" href="#5-wir-haben-schon-it-projekte-die-scheitern">5. "Wir haben schon IT-Projekte, die scheitern!"</a></h3>
+<p><strong>Der Einwand:</strong> "Noch ein IT-Projekt? Die letzten sind alle gescheitert."</p>
+<p><strong>Ihre Antwort:</strong>
+"Verstehe die Skepsis. Aber KI-Agenten sind anders:</p>
+<ul>
+<li>Kein 18-Monats-Projekt, sondern 90-Tage-Sprints</li>
+<li>Keine Millionen-Budgets, sondern €15k Pilots</li>
+<li>Kein Big Bang, sondern iterative Erfolge</li>
+<li>SaaS statt Eigenentwicklung</li>
+</ul>
+<p>Was wäre, wenn wir in 30 Tagen erste Ergebnisse sehen?"</p>
+<p><strong>Power-Move:</strong> 30-Tage-Success-Garantie anbieten.</p>
+<hr />
+<h3 id="6-unsere-prozesse-sind-zu-komplex"><a class="header" href="#6-unsere-prozesse-sind-zu-komplex">6. "Unsere Prozesse sind zu komplex!"</a></h3>
+<p><strong>Der Einwand:</strong> "Bei uns ist alles Spezialfall, das kann keine KI."</p>
+<p><strong>Ihre Antwort:</strong>
+"Interessant - das sagen 90% aller Unternehmen. Trotzdem:</p>
+<ul>
+<li>Fangen wir mit den EINFACHEN 20% an</li>
+<li>Die bringen oft 80% der Einsparungen</li>
+<li>Komplexität wächst mit der KI mit</li>
+<li>Menschen bleiben für Spezialfälle</li>
+</ul>
+<p>Welche 3 Prozesse nerven Ihr Team am MEISTEN?"</p>
+<p><strong>Power-Move:</strong> Workshop anbieten zur Prozess-Analyse.</p>
+<hr />
+<h3 id="7-die-technologie-ist-nicht-ausgereift"><a class="header" href="#7-die-technologie-ist-nicht-ausgereift">7. "Die Technologie ist nicht ausgereift!"</a></h3>
+<p><strong>Der Einwand:</strong> "KI macht zu viele Fehler, ist noch Beta."</p>
+<p><strong>Ihre Antwort:</strong>
+"Faire Bedenken. Die Realität:</p>
+<ul>
+<li>GPT-4 hat 90%+ Accuracy bei Standard-Tasks</li>
+<li>Besser als Menschen bei repetitiven Aufgaben</li>
+<li>Fehler sind korrigierbar und lernfähig</li>
+<li>Hybrid-Modelle: Mensch prüft kritische Entscheidungen</li>
+</ul>
+<p>Perfektion oder 90% Verbesserung - was wählen Sie?"</p>
+<p><strong>Power-Move:</strong> Live-Demo mit echten Daten.</p>
+<hr />
+<h3 id="8-wir-brauchen-erstmal-eine-ki-strategie"><a class="header" href="#8-wir-brauchen-erstmal-eine-ki-strategie">8. "Wir brauchen erstmal eine KI-Strategie!"</a></h3>
+<p><strong>Der Einwand:</strong> "Ohne Gesamt-Strategie starten wir nicht."</p>
+<p><strong>Ihre Antwort:</strong>
+"Strategie ist wichtig, aber:</p>
+<ul>
+<li>Die beste Strategie entsteht durch MACHEN</li>
+<li>Piloten informieren die Strategie</li>
+<li>6 Monate Strategie = 6 Monate Wettbewerbsnachteil</li>
+<li>Fail fast, learn faster</li>
+</ul>
+<p>Wie wäre es mit: Pilot WIRD Teil der Strategie?"</p>
+<p><strong>Power-Move:</strong> "Crawl-Walk-Run" Ansatz vorschlagen.</p>
+<hr />
+<h3 id="9-der-betriebsrat-wird-das-blockieren"><a class="header" href="#9-der-betriebsrat-wird-das-blockieren">9. "Der Betriebsrat wird das blockieren!"</a></h3>
+<p><strong>Der Einwand:</strong> "Mitbestimmung macht das unmöglich."</p>
+<p><strong>Ihre Antwort:</strong>
+"Betriebsrat ist unser PARTNER, nicht Gegner:</p>
+<ul>
+<li>Frühzeitige Einbindung geplant</li>
+<li>Job-Garantien für Pilot-Phase</li>
+<li>Upskilling-Budget eingeplant</li>
+<li>Fokus auf Arbeitserleichterung</li>
+</ul>
+<p>Was wenn der Betriebsrat der größte FÜRSPRECHER wird?"</p>
+<p><strong>Power-Move:</strong> Gemeinsames Meeting mit BR vorschlagen.</p>
+<hr />
+<h3 id="10-wir-haben-keine-zeit-dafür"><a class="header" href="#10-wir-haben-keine-zeit-dafür">10. "Wir haben keine Zeit dafür!"</a></h3>
+<p><strong>Der Einwand:</strong> "Zu beschäftigt für neue Projekte."</p>
+<p><strong>Ihre Antwort:</strong>
+"Genau DESHALB brauchen wir Agenten:</p>
+<ul>
+<li>Sie SIND zu beschäftigt - mit falschen Dingen</li>
+<li>3 Stunden Investment → 30 Stunden Ersparnis/Monat</li>
+<li>Vendor macht Heavy Lifting</li>
+<li>Pilot läuft parallel, nicht statt Tagesgeschäft</li>
+</ul>
+<p>Wann haben Sie Zeit, Zeit zu sparen?"</p>
+<p><strong>Power-Move:</strong> Zeitersparnis-Rechnung visualisieren.</p>
+<hr />
+<h2 id="-die-universelle-einwand-formel"><a class="header" href="#-die-universelle-einwand-formel">🎯 Die Universelle Einwand-Formel</a></h2>
+<h3 id="aeiou---methode"><a class="header" href="#aeiou---methode">A.E.I.O.U. - Methode:</a></h3>
+<p><strong>A</strong>nerkennen: "Ich verstehe Ihre Bedenken..."
+<strong>E</strong>mpathie: "Viele Unternehmen denken so..."
+<strong>I</strong>nformation: "Die Fakten zeigen aber..."
+<strong>O</strong>ption: "Was wäre wenn wir..."
+<strong>U</strong>rgenz: "Die Konkurrenz wartet nicht..."</p>
+<hr />
+<h2 id="-power-phrasen-für-schwierige-momente"><a class="header" href="#-power-phrasen-für-schwierige-momente">💪 Power-Phrasen für schwierige Momente</a></h2>
+<h3 id="bei-totalem-widerstand"><a class="header" href="#bei-totalem-widerstand">Bei totalem Widerstand:</a></h3>
+<blockquote>
+<p>"Was müsste passieren, damit Sie es PROBIEREN würden?"</p>
+</blockquote>
+<h3 id="bei-zaudern"><a class="header" href="#bei-zaudern">Bei Zaudern:</a></h3>
+<blockquote>
+<p>"Was kostet uns jeder Tag ohne Entscheidung?"</p>
+</blockquote>
+<h3 id="bei-skepsis"><a class="header" href="#bei-skepsis">Bei Skepsis:</a></h3>
+<blockquote>
+<p>"Würden harte Zahlen Ihre Meinung ändern?"</p>
+</blockquote>
+<h3 id="bei-angst"><a class="header" href="#bei-angst">Bei Angst:</a></h3>
+<blockquote>
+<p>"Was ist das SCHLIMMSTE, was passieren kann? Und das BESTE?"</p>
+</blockquote>
+<h3 id="bei-ablehnung"><a class="header" href="#bei-ablehnung">Bei Ablehnung:</a></h3>
+<blockquote>
+<p>"Verstehe. Wann wäre ein besserer Zeitpunkt, um €2M zu sparen?"</p>
+</blockquote>
+<hr />
+<h2 id="-einwand-prioritäts-matrix"><a class="header" href="#-einwand-prioritäts-matrix">📊 Einwand-Prioritäts-Matrix</a></h2>
+<pre><code>Häufigkeit
+Hoch │ "Zu teuer"          "Jobs gefährdet"
+     │ → ROI-Fokus         → Augmentation-Story
+     │
+     │ "Keine Zeit"        "Datenschutz"
+     │ → Quick Win Demo    → Compliance-Paket
+Niedrig─────────────────────────────────────
+     Niedrig                          Hoch
+                 Impact auf Entscheidung
+</code></pre>
+<hr />
+<h2 id="-notfall-kit-wenn-nichts-hilft"><a class="header" href="#-notfall-kit-wenn-nichts-hilft">🚨 Notfall-Kit: Wenn nichts hilft</a></h2>
+<h3 id="plan-b-der-pilot-kompromiss"><a class="header" href="#plan-b-der-pilot-kompromiss">Plan B: Der Pilot-Kompromiss</a></h3>
+<p>"Ok, ich verstehe alle Bedenken. Wie wäre es mit:</p>
+<ul>
+<li>30-Tage-Mini-Pilot</li>
+<li>€5k Budget (statt €15k)</li>
+<li>1 einziger Prozess</li>
+<li>Voller Exit jederzeit</li>
+<li>Success = wir reden über mehr"</li>
+</ul>
+<h3 id="plan-c-der-wettbewerbs-trigger"><a class="header" href="#plan-c-der-wettbewerbs-trigger">Plan C: Der Wettbewerbs-Trigger</a></h3>
+<p>"Kein Problem, ich verstehe. Nur damit Sie es wissen:
+[Konkurrent X] spart bereits €2M/Jahr mit Agenten.
+Soll ich in 6 Monaten nochmal fragen?"</p>
+<h3 id="plan-d-der-experten-joker"><a class="header" href="#plan-d-der-experten-joker">Plan D: Der Experten-Joker</a></h3>
+<p>"Würde es helfen, wenn ein neutraler Experte die Möglichkeiten aufzeigt?
+Ich kann ein kostenloses Gespräch mit [Experte] arrangieren."</p>
+<hr />
+<h2 id="-einwand-behandlungs-checkliste"><a class="header" href="#-einwand-behandlungs-checkliste">✅ Einwand-Behandlungs-Checkliste</a></h2>
+<p>Vor jedem kritischen Meeting:</p>
+<p>□ Top 3 wahrscheinliche Einwände identifiziert
+□ Konkrete Zahlen &amp; Beispiele parat
+□ Success Stories aus gleicher Branche
+□ ROI-Rechnung vorbereitet
+□ Compliance-Antworten ready
+□ Plan B in der Tasche
+□ Emotionale &amp; rationale Argumente</p>
+<hr />
+<h2 id="-die-psychologie-dahinter"><a class="header" href="#-die-psychologie-dahinter">🎪 Die Psychologie dahinter</a></h2>
+<h3 id="warum-menschen-wirklich-ablehnen"><a class="header" href="#warum-menschen-wirklich-ablehnen">Warum Menschen WIRKLICH ablehnen:</a></h3>
+<ol>
+<li><strong>Angst vor Veränderung</strong> (nicht vor Technologie)</li>
+<li><strong>Kontrollverlust</strong> (nicht Kostensorgen)</li>
+<li><strong>Statusbedrohung</strong> (nicht Komplexität)</li>
+<li><strong>Vergangene Traumata</strong> (nicht aktuelle Fakten)</li>
+</ol>
+<h3 id="der-wahre-schlüssel"><a class="header" href="#der-wahre-schlüssel">Der wahre Schlüssel:</a></h3>
+<p><strong>Sicherheit geben, nicht überzeugen.</strong></p>
+<p>Menschen kaufen keine KI-Agenten.
+Sie kaufen Sicherheit, Status und Kontrolle.</p>
+<hr />
+<p><strong>Goldene Regel:</strong> Der beste Einwand ist der, der gar nicht erst entsteht.
+<strong>Silberne Regel:</strong> Fragen Sie "Was bräuchten Sie, um JA zu sagen?"
+<strong>Eiserne Regel:</strong> Manchmal ist NEIN ok - aber nicht ohne Kampf.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="success_metrics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="ressourcen_urls.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="success_metrics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="ressourcen_urls.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

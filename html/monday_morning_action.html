@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="de" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Monday Morning Action List - KI-Agenten: Die Billion-Euro-Maschinen</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Wie autonome Systeme Märkte revolutionieren - und wie Sie profitieren. Der Business-Guide zur größten Wirtschaftsrevolution unserer Zeit.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">KI-Agenten: Die Billion-Euro-Maschinen</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/huhn511/ki-agenten-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="monday-morning-action-list-ki-agenten-sofort-starten"><a class="header" href="#monday-morning-action-list-ki-agenten-sofort-starten">Monday Morning Action List: KI-Agenten sofort starten</a></h1>
+<h2 id="-tag-1-montag-morgen"><a class="header" href="#-tag-1-montag-morgen">📅 Tag 1 (Montag Morgen)</a></h2>
+<h3 id="800---830-uhr-status-quo-erfassen"><a class="header" href="#800---830-uhr-status-quo-erfassen">8:00 - 8:30 Uhr: Status Quo erfassen</a></h3>
+<p>□ <strong>E-Mail an Team:</strong> "KI-Agent-Initiative starten"</p>
+<pre><code>Betreff: Neue Initiative: KI-Agenten evaluieren
+
+Team,
+ich möchte diese Woche evaluieren, wie KI-Agenten unsere 
+[Abteilung/Prozess] verbessern können. Bitte bis Mittwoch:
+- Top 3 repetitive Aufgaben identifizieren
+- Geschätzte Wochenstunden pro Aufgabe
+- Größte Frustrationspunkte
+
+Meeting am Donnerstag 14:00 Uhr.
+</code></pre>
+<h3 id="830---900-uhr-c-suite-pitch-vorbereiten"><a class="header" href="#830---900-uhr-c-suite-pitch-vorbereiten">8:30 - 9:00 Uhr: C-Suite Pitch vorbereiten</a></h3>
+<p>□ <strong>Meeting-Anfrage an Vorgesetzten</strong></p>
+<pre><code>Betreff: 15 Min - KI-Agent-Potenzial diskutieren
+
+Hallo [Name],
+könnten wir diese Woche 15 Minuten über KI-Agenten sprechen?
+Ich sehe Potenzial für €[X]k Einsparungen in unserer Abteilung.
+Verfügbar: [Zeitslots]
+</code></pre>
+<h3 id="900---1000-uhr-quick-assessment"><a class="header" href="#900---1000-uhr-quick-assessment">9:00 - 10:00 Uhr: Quick Assessment</a></h3>
+<p>□ <strong>3 Prozesse identifizieren mit:</strong></p>
+<ul>
+<li>Hohem Volumen (&gt;100x/Woche)</li>
+<li>Klaren Regeln</li>
+<li>Digitalen Daten</li>
+<li>Frustration im Team</li>
+</ul>
+<p>□ <strong>ROI-Schnellrechnung:</strong></p>
+<pre><code>Stunden/Woche × €50 × 52 Wochen = €[X] Einsparpotenzial
+</code></pre>
+<h3 id="1000---1100-uhr-research--benchmarking"><a class="header" href="#1000---1100-uhr-research--benchmarking">10:00 - 11:00 Uhr: Research &amp; Benchmarking</a></h3>
+<p>□ Konkurrenz-Check: Nutzen Wettbewerber bereits Agenten?
+□ Tool-Recherche: Top 3 Agenten für Ihren Use Case
+□ Success Stories: 2 Beispiele aus Ihrer Branche</p>
+<h3 id="1100---1200-uhr-budget-kalkulation"><a class="header" href="#1100---1200-uhr-budget-kalkulation">11:00 - 12:00 Uhr: Budget-Kalkulation</a></h3>
+<p>□ <strong>Budget-Request-Template ausfüllen:</strong></p>
+<pre><code>PILOT-BUDGET KI-AGENT
+Zeitraum: 90 Tage
+Tool-Kosten: €[X]/Monat
+Consulting: €[X] einmalig
+Training: €[X]
+GESAMT: €[X]
+
+Erwarteter ROI: €[X] in 12 Monaten
+Payback: [X] Monate
+</code></pre>
+<h2 id="-woche-1-foundation-legen"><a class="header" href="#-woche-1-foundation-legen">📋 Woche 1: Foundation legen</a></h2>
+<h3 id="dienstag-team-alignment"><a class="header" href="#dienstag-team-alignment">Dienstag: Team-Alignment</a></h3>
+<p>□ Umfrage verschicken: "Wo verlieren wir Zeit?"
+□ IT-Security kontaktieren: Compliance-Check
+□ HR informieren: Change-Prozess einleiten</p>
+<h3 id="mittwoch-daten-sammeln"><a class="header" href="#mittwoch-daten-sammeln">Mittwoch: Daten sammeln</a></h3>
+<p>□ Team-Feedback konsolidieren
+□ Prozess-Dokumentation erstellen
+□ Metriken definieren (Baseline)</p>
+<h3 id="donnerstag-team-meeting"><a class="header" href="#donnerstag-team-meeting">Donnerstag: Team-Meeting</a></h3>
+<p><strong>Agenda (60 Min):</strong></p>
+<pre><code>1. KI-Agent-Konzept erklären (10 Min)
+2. Team-Feedback diskutieren (20 Min)
+3. Top 3 Use Cases priorisieren (20 Min)
+4. Nächste Schritte &amp; Volunteers (10 Min)
+</code></pre>
+<h3 id="freitag-management-pitch"><a class="header" href="#freitag-management-pitch">Freitag: Management-Pitch</a></h3>
+<p><strong>15-Min-Pitch-Struktur:</strong></p>
+<pre><code>1. Problem (2 Min): "Wir verschwenden 40h/Woche mit X"
+2. Lösung (3 Min): "KI-Agent kann 80% automatisieren"
+3. Business Case (5 Min): "€200k Einsparung, 6 Mon. Payback"
+4. Pilot-Plan (3 Min): "90 Tage, €15k Budget, klare KPIs"
+5. Ask (2 Min): "Freigabe für Pilot?"
+</code></pre>
+<h2 id="-monat-1-pilot-starten"><a class="header" href="#-monat-1-pilot-starten">🚀 Monat 1: Pilot starten</a></h2>
+<h3 id="woche-2-vendor-selection"><a class="header" href="#woche-2-vendor-selection">Woche 2: Vendor Selection</a></h3>
+<p>□ 3 Demos vereinbaren
+□ Evaluation-Matrix erstellen
+□ References checken</p>
+<h3 id="woche-3-pilot-setup"><a class="header" href="#woche-3-pilot-setup">Woche 3: Pilot Setup</a></h3>
+<p>□ Agent konfigurieren
+□ Test-Daten vorbereiten
+□ Success-Kriterien definieren</p>
+<h3 id="woche-4-go-live"><a class="header" href="#woche-4-go-live">Woche 4: Go-Live</a></h3>
+<p>□ Soft-Launch mit 2-3 Power-Usern
+□ Tägliches Monitoring
+□ Feedback-Loop etablieren</p>
+<h2 id="-success-tracking-template"><a class="header" href="#-success-tracking-template">📊 Success-Tracking-Template</a></h2>
+<h3 id="wöchentliche-metriken"><a class="header" href="#wöchentliche-metriken">Wöchentliche Metriken:</a></h3>
+<pre><code>KW [X] REPORT
+- Prozesse automatisiert: [X]
+- Stunden gespart: [X]h
+- Fehlerrate: [X]%
+- User Satisfaction: [X]/5
+- Kosten gespart: €[X]
+</code></pre>
+<h3 id="monatliches-executive-update"><a class="header" href="#monatliches-executive-update">Monatliches Executive Update:</a></h3>
+<pre><code>BETREFF: KI-Agent Update - Monat [X]
+
+HIGHLIGHTS:
+✓ €[X]k eingespart
+✓ [X]h Produktivitätsgewinn
+✓ [X]% Fehlerreduktion
+
+NÄCHSTE SCHRITTE:
+- Use Case #2 starten
+- Team erweitern
+- Skalierung planen
+</code></pre>
+<h2 id="-quick-win-garantien"><a class="header" href="#-quick-win-garantien">💡 Quick-Win-Garantien</a></h2>
+<h3 id="die-sicheren-starter-projekte"><a class="header" href="#die-sicheren-starter-projekte">Die "Sicheren" Starter-Projekte:</a></h3>
+<ol>
+<li>
+<p><strong>E-Mail-Klassifizierung &amp; Routing</strong></p>
+<ul>
+<li>Aufwand: Niedrig</li>
+<li>Impact: Hoch</li>
+<li>Zeit bis ROI: 30 Tage</li>
+</ul>
+</li>
+<li>
+<p><strong>Dokumenten-Extraktion</strong></p>
+<ul>
+<li>Aufwand: Mittel</li>
+<li>Impact: Sehr hoch</li>
+<li>Zeit bis ROI: 60 Tage</li>
+</ul>
+</li>
+<li>
+<p><strong>FAQ-Automatisierung</strong></p>
+<ul>
+<li>Aufwand: Niedrig</li>
+<li>Impact: Mittel</li>
+<li>Zeit bis ROI: 14 Tage</li>
+</ul>
+</li>
+</ol>
+<h2 id="-not-to-do-liste"><a class="header" href="#-not-to-do-liste">🛑 Not-To-Do-Liste</a></h2>
+<h3 id="was-sie-nicht-tun-sollten"><a class="header" href="#was-sie-nicht-tun-sollten">Was Sie NICHT tun sollten:</a></h3>
+<p>❌ Mit komplexesten Prozessen starten
+❌ Ohne IT-Security loslegen
+❌ Mitarbeiter-Ängste ignorieren
+❌ Zu viele Use Cases parallel
+❌ Ohne klare Success-Metriken</p>
+<h2 id="-notfall-kontakte"><a class="header" href="#-notfall-kontakte">📱 Notfall-Kontakte</a></h2>
+<h3 id="wen-sie-brauchen-werden"><a class="header" href="#wen-sie-brauchen-werden">Wen Sie brauchen werden:</a></h3>
+<ul>
+<li><strong>IT-Security:</strong> Für Compliance-Fragen</li>
+<li><strong>Legal:</strong> Für Datenschutz-Check</li>
+<li><strong>HR:</strong> Für Change Management</li>
+<li><strong>Finance:</strong> Für Budget-Freigabe</li>
+<li><strong>Vendor:</strong> Für technischen Support</li>
+</ul>
+<h2 id="-die-eine-seite-zusammenfassung"><a class="header" href="#-die-eine-seite-zusammenfassung">✅ Die Eine-Seite-Zusammenfassung</a></h2>
+<p><strong>Was:</strong> KI-Agent-Pilot für [Prozess X]
+<strong>Warum:</strong> €200k Einsparpotenzial/Jahr
+<strong>Wie:</strong> 90-Tage-Pilot, €15k Investment
+<strong>Wann:</strong> Start nächsten Montag
+<strong>Wer:</strong> 3-Person Core Team + Vendor</p>
+<p><strong>Erfolgskriterien:</strong></p>
+<ul>
+<li>50% Zeitersparnis</li>
+<li>&lt;2% Fehlerrate</li>
+<li>
+<blockquote>
+<p>4.0 User Satisfaction</p>
+</blockquote>
+</li>
+<li>ROI in 6 Monaten</li>
+</ul>
+<hr />
+<p><strong>Remember:</strong> Der beste Zeitpunkt war gestern. Der zweitbeste ist Montag Morgen, 8:00 Uhr.</p>
+<p><em>Kopieren Sie diese Seite. Hängen Sie sie an Ihre Wand. Starten Sie Montag.</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="anhang_playbooks.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="quick_reference.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="anhang_playbooks.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="quick_reference.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -62,6 +62,27 @@ Basierend auf 70 Jahren KI-Geschichte können wir prognostizieren:
 
 **Die entscheidende Frage:** Auf welcher Seite der Geschichte wollen Sie stehen?
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **KI-Winter-Resilienz:** Wie würde Ihr Unternehmen einen plötzlichen KI-Hype-Einbruch überstehen? Welche Ihrer aktuellen KI-Investitionen sind "Winter-fest"?
+
+**Praktisch:**
+2. **Der ImageNet-Moment:** Welche scheinbar kleine technische Entwicklung könnte in Ihrer Branche einen Durchbruch wie ImageNet auslösen? Beobachten Sie die richtigen Signale?
+
+**Zukunft:**
+3. **Skalierungs-Strategie:** GPT wuchs von 117M auf 1.8T Parameter. Wenn die KI-Systeme Ihrer Konkurrenz 10x leistungsfähiger werden - sind Sie darauf vorbereitet?
+
+**Persönlich:**
+4. **Reasoning-Revolution:** o3 kann abstrakt denken. Welche Ihrer aktuellen Aufgaben erfordern echtes Reasoning? Wie lange bleiben diese "menschlich"?
+
+**Provokativ:**
+5. **Die 73%-Falle:** Warum sollte IHR KI-Projekt zu den 27% erfolgreichen gehören? Was machen Sie anders als die Mehrheit, die scheitert?
+
+---
+
 **Weiter zu:** [Kapitel 2: Architektur der modernen KI](../kapitel_2/intro.md)
 
 > *"Es gibt einen Unterschied zwischen dem Wissen um den Weg und dem Gehen des Weges."* — Morpheus

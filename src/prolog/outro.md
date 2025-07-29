@@ -72,4 +72,25 @@ In wenigen Sekunden werden Sie zu Kapitel 1 blättern und die 70-jährige Geschi
 
 **Die Reise beginnt hier.** In den folgenden Kapiteln werden wir diese neue Realität erkunden – von den technischen Fundamenten bis zu den gesellschaftlichen Auswirkungen einer Welt, in der die Grenzen zwischen Mensch und Maschine, zwischen real und künstlich, zunehmend verschwimmen.
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die 57.1%-Realität:** Über die Hälfte des Internets ist KI-generiert. Was bedeutet das für Ihre digitale Strategie?
+
+**Praktisch:**
+2. **Die drei Rollen:** Skeptiker, Beobachter oder Architekt - welche Rolle nehmen Sie und Ihr Unternehmen ein? Warum?
+
+**Zukunft:**
+3. **Autorenschaft neu definiert:** Wenn KI Bücher schreibt - wer besitzt das geistige Eigentum? Wie ändert das Ihre Content-Strategie?
+
+**Persönlich:**
+4. **Die Matrix sehen:** Nachdem Sie wissen, wie viel KI bereits um Sie herum ist - ändert das Ihr Verhalten online?
+
+**Provokativ:**
+5. **Die Kontroll-Frage:** Glauben Sie wirklich, Sie haben noch die Kontrolle? Oder leben Sie bereits in einer von Agenten kuratierten Realität?
+
+---
+
 *Wie Morpheus sagt: "Ich kann dir nur die Tür zeigen. Hindurchgehen musst du allein."*

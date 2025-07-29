@@ -41,6 +41,27 @@ Meine neue Rolle mit KI:
 
 **Die Zukunft gehört nicht Menschen oder Maschinen – sie gehört Teams aus Menschen und Maschinen.**
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die 92%-Transformation:** Fast alle IT-Jobs ändern sich fundamental. Ist Ihre HR-Strategie darauf vorbereitet?
+
+**Praktisch:**
+2. **Der Automatisierungs-Check:** Welche 3 Prozesse in Ihrer Abteilung würden Sie MORGEN an KI übergeben?
+
+**Zukunft:**
+3. **Neue Rollen:** Brauchen Sie einen AI Ethics Officer? Einen Prompt Engineer? Wann stellen Sie sie ein?
+
+**Persönlich:**
+4. **Ihr Transformations-Score:** Wie viel Prozent Ihrer Arbeit ist automatisierbar? Was tun Sie dagegen?
+
+**Provokativ:**
+5. **Die Überholspur:** Ihre KI-nutzenden Kollegen sind 3x produktiver. Wie lange können Sie sich Technik-Verweigerung noch leisten?
+
+---
+
 **Weiter zu:** [Kapitel 7: Gesellschaft und Ethik](../kapitel_7/intro.md)
 
 *"Du musst wissen, dass das wie bei allem ist. Niemand kann dir sagen, was die Matrix ist. Du musst sie selbst erfahren." – Das Orakel*

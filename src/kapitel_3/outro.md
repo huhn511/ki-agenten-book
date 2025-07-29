@@ -163,3 +163,22 @@ AGENT ROI = (Zeitersparnis × Stundensatz × Mitarbeiter) - Agent-Kosten
 *"Ich muss raus aus dieser Welt, dieser Zoo, dieser Gefängnis dieser Realität, wie auch immer man es nennen will." – Agent Smith*
 
 **Die Ironie:** Während Agent Smith aus der Matrix ausbrechen wollte, brechen heute digitale Agenten in unsere Realität ein. Und sie kommen, um zu bleiben.
+
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die AGENT-Methode:** An welchem Punkt des AGENT-Frameworks steht Ihr Unternehmen? Was hindert Sie am nächsten Schritt?
+
+**Praktisch:**
+2. **Der erste Use Case:** Welcher Ihrer Prozesse erfüllt alle 5 Kriterien des Quick-Checks? Warum haben Sie noch nicht angefangen?
+
+**Zukunft:**
+3. **Das 3-Jahres-Szenario:** Leader, Follower oder Dinosaurier - wo sehen Sie Ihr Unternehmen 2027? Was müssen Sie HEUTE tun, um Leader zu werden?
+
+**Persönlich:**
+4. **Die Widerstands-Frage:** Welche Ihrer Mitarbeiter werden Agenten am meisten widerstreben? Wie machen Sie sie zu "Agent Trainern" statt Gegnern?
+
+**Provokativ:**
+5. **Die €5-Millionen-Frage:** Ihre Konkurrenz spart bereits Millionen mit Agenten. Warum verschwenden Sie immer noch Zeit mit manuellen Prozessen?

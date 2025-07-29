@@ -1,4 +1,4 @@
-# Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert
+# KI-Agenten: Die Billion-Euro-Maschinen
 
 > "Das ist deine letzte Chance. Danach gibt es kein Zurück."
 > 

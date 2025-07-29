@@ -3,6 +3,32 @@
 > *"Ich bin frei."*  
 > — Agent Smith
 
+---
+
+### 📄 KAPITEL 5 AUF EINEN BLICK
+
+**Lesezeit:** ~25 Minuten | **Schwierigkeitsgrad:** ⭐⭐⭐⬆⬆ (Mittel)
+
+**Das erwartet Sie:**
+- 57.1% des Internets ist bereits KI-generiert
+- Das Ende von Social Media wie wir es kennen
+- Agent-to-Agent Kommunikation übernimmt das Web
+- €300B Markt verschwindet - neue €500B entstehen
+- Physische Welt: 12M Roboter bis 2027
+
+**Schlüssel-Insights:**
+✓ Menschen werden zur Minderheit im eigenen Internet
+✓ Information wird zum autonomen Service
+✓ KI-Agenten handeln bereits für Sie - ohne Ihr Wissen
+✓ Die Grenze zwischen digital und physisch löst sich auf
+
+**Für wen wichtig:**
+- **CEOs/CMOs:** Ihr digitales Marketing funktioniert nicht mehr
+- **CDOs:** Neue Geschäftsmodelle in der Agent Economy
+- **Jeden:** Sie leben bereits in einer kuratierten Realität
+
+---
+
 **Samstag, 25. Januar 2025, 19:23 Uhr. Berlin-Prenzlauer Berg.**
 
 Sarah Chen scrollt durch ihr Instagram. Ein perfektes Dinner-Foto ihrer Freundin. Ein Sonnenuntergang aus Santorini. Ein inspirierendes Zitat. Alles normal. Alles vertraut.

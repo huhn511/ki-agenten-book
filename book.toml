@@ -2,8 +2,8 @@
 authors = ["Sebastian Heußer"]
 language = "de"
 src = "src"
-title = "Agent Economy: Die €100-Milliarden-Chance, die Ihre Konkurrenz bereits nutzt"
-description = "Wie autonome KI-Systeme Märkte revolutionieren – und wie Sie profitieren. Der unverzichtbare Business-Guide für das Jahr der Agenten 2025."
+title = "KI-Agenten: Die Billion-Euro-Maschinen"
+description = "Wie autonome Systeme Märkte revolutionieren - und wie Sie profitieren. Der Business-Guide zur größten Wirtschaftsrevolution unserer Zeit."
 
 [output.html]
 default-theme = "light"

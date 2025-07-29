@@ -36,6 +36,27 @@
 
 **Die 1000x Effizienzsteigerung ist nicht nur möglich - sie ist unausweichlich.** Die nächsten 3-5 Jahre werden zeigen, ob wir die KI-Revolution retten können, bevor sie sich selbst zerstört. Agent Smith wollte aus seiner Realität ausbrechen - wir müssen lernen, in unserer zu bleiben und sie nachhaltiger zu gestalten.
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die Energie-Falle:** Ihre KI-Pläne benötigen 5x mehr Strom als erwartet. Können Sie sich das leisten? Wenn nicht - was opfern Sie?
+
+**Praktisch:**
+2. **Infrastructure Score:** Sie haben nur 6 von 15 Haken. Welche 3 Infrastruktur-Lücken kosten Sie am meisten Performance?
+
+**Zukunft:**
+3. **Neuromorphe Revolution:** 1000x Effizienz durch neue Chips. Warten Sie darauf oder investieren Sie jetzt in "alte" Technologie?
+
+**Persönlich:**
+4. **Nachhaltigkeits-Dilemma:** Ihre KI spart 1000 Arbeitsplätze aber verbraucht Strom wie eine Kleinstadt. Wie rechtfertigen Sie das?
+
+**Provokativ:**
+5. **Die 85%-Regel:** Wenn wirklich 85% aller KI-Projekte an Infrastruktur scheitern - warum fokussieren Sie immer noch auf Algorithmen statt Hardware?
+
+---
+
 **Weiter zu:** [Kapitel 5: Das neue Internet der Agenten](../kapitel_5/intro.md)
 
 *"Ich bin frei." – Agent Smith*

@@ -3,6 +3,32 @@
 > *"Was heißt 'real'? Definiere 'real'. Wenn du von dem sprichst, was du anfassen, was du riechen, was du schmecken und sehen kannst, dann ist 'real' einfach ein elektrisches Signal, interpretiert von deinem Gehirn."*  
 > — Morpheus
 
+---
+
+### 📄 KAPITEL 6 AUF EINEN BLICK
+
+**Lesezeit:** ~23 Minuten | **Schwierigkeitsgrad:** ⭐⭐⭐⬆⬆ (Mittel)
+
+**Das erwartet Sie:**
+- 25% aller Jobs weltweit von KI betroffen
+- 92% der IT-Jobs werden transformiert (nicht ersetzt!)
+- Frauen stärker betroffen: 9.6% vs 3.5% bei Männern
+- +78 Millionen neue Jobs bis 2027
+- Konkrete Transformation am Beispiel VW
+
+**Schlüssel-Insights:**
+✓ Transformation > Ersetzung: Jobs ändern sich fundamental
+✓ Neue Rollen entstehen schneller als alte verschwinden
+✓ Upskilling entscheidet über Karriere-Zukunft
+✓ KI macht Menschen produktiver, nicht überflüssig
+
+**Für wen wichtig:**
+- **CEOs/HR:** Workforce-Transformation strategisch planen
+- **Mitarbeiter:** Ihre Karriere KI-sicher machen
+- **Führungskräfte:** Teams durch den Wandel führen
+
+---
+
 **Montag, 27. Januar 2025, 8:47 Uhr. Volkswagen-Werk Wolfsburg.**
 
 Klaus Wagner, 52, Facharbeiter seit 27 Jahren, betritt die Montagehalle. Aber heute ist alles anders. Wo gestern noch sein Arbeitsplatz war, steht jetzt KARL – ein kollaborativer Roboter mit KI-Gehirn.

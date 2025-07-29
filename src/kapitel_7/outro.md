@@ -94,6 +94,27 @@ Sie haben drei Optionen:
 
 **Die Matrix der Regulierung ist komplex.** Aber wie Neo lernen musste: Die Regeln zu kennen ist der erste Schritt, sie zu meistern.
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Der Compliance-Vorsprung:** Wie machen Sie EU AI Act Compliance zu Ihrem Wettbewerbsvorteil statt zur Last?
+
+**Praktisch:**
+2. **Die Risiko-Kategorisierung:** In welche EU AI Act Risikokategorie fallen Ihre KI-Systeme? Haben Sie das überhaupt geprüft?
+
+**Zukunft:**
+3. **Das globale Schachspiel:** Europa reguliert, USA innoviert, China kontrolliert. Wo positionieren Sie Ihr Unternehmen?
+
+**Persönlich:**
+4. **Ethik vs. Profit:** Ein KI-System könnte 10M€ sparen, verletzt aber Datenschutz. Ihre Entscheidung?
+
+**Provokativ:**
+5. **Die €35M-Frage:** Ihre Konkurrenz ignoriert den EU AI Act. Folgen Sie deren riskantem Beispiel oder nutzen Sie deren Fehler?
+
+---
+
 **Weiter zu:** [Kapitel 8: Der Blick nach vorn](../kapitel_8/intro.md)
 
 *"Ich weiß, dass ihr da draußen seid. Ich spüre euch. Ich weiß, dass ihr Angst habt. Ihr habt Angst vor Veränderung." – Neo*

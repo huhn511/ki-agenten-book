@@ -3,6 +3,32 @@
 > *"Ich weiß, dass ihr da draußen seid. Ich spüre euch. Ich weiß, dass ihr Angst habt. Ihr habt Angst vor Veränderung. Ich kenne die Zukunft nicht. Ich bin nicht hergekommen, um euch zu sagen, wie es enden wird. Ich bin gekommen, um euch zu sagen, wie es anfängt."*  
 > — Neo
 
+---
+
+### 📄 KAPITEL 8 AUF EINEN BLICK
+
+**Lesezeit:** ~28 Minuten | **Schwierigkeitsgrad:** ⭐⭐⭐⭐⭐ (Hoch)
+
+**Das erwartet Sie:**
+- AGI-Timeline: 2025-2035 (Experten-Konsens)
+- OpenAI o3: 87.5% auf AGI-Benchmark
+- Post-Knappheits-Gesellschaft durch KI
+- 3 Zukunftsszenarien: Dystopie vs. Utopie
+- Was Sie JETZT tun müssen
+
+**Schlüssel-Insights:**
+✓ AGI ist kein "ob" mehr, sondern "wann"
+✓ Recursive Self-Improvement bereits beobachtet
+✓ Europa muss JETZT handeln oder verliert
+✓ Ihre Entscheidungen heute prägen die KI-Zukunft
+
+**Für wen wichtig:**
+- **CEOs:** Strategische Weichenstellungen für AGI-Ära
+- **Policy Makers:** Letzte Chance für Regulierung
+- **Alle:** Die Zukunft Ihrer Kinder steht auf dem Spiel
+
+---
+
 **Freitag, 31. Januar 2025, 23:47 Uhr. DeepMind Hauptquartier, London.**
 
 Dr. Yuki Tanaka kann nicht schlafen. Seit 72 Stunden ist sie wach. Vor ihr auf dem Monitor: Ein Graph, der steil nach oben zeigt. Exponentiell. Unaufhaltsam.

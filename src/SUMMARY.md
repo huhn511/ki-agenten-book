@@ -96,5 +96,26 @@
 - [**Anhang: Branchenspezifische Agent-Playbooks**](./anhang_playbooks.md)
   *Konkrete Implementierungsanleitungen für Finanz, Gesundheit und Produktion*
 
+---
+
+## 🚀 Praktische Tools & Ressourcen
+
+- [**Monday Morning Action List**](./monday_morning_action.md)
+  *KI-Agenten sofort starten - Der Schritt-für-Schritt Guide*
+
+- [**KI-Agent Spickzettel**](./quick_reference.md)
+  *Die wichtigsten Punkte auf einen Blick*
+
+- [**Success Metrics Dashboard**](./success_metrics.md)
+  *KI-Agent Implementation - ROI Timeline und KPIs*
+
+- [**Einwände & Antworten**](./einwaende_antworten.md)
+  *Die Top 10 Einwände erfolgreich kontern*
+
+- [**Ressourcen & Links**](./ressourcen_urls.md)
+  *Ihr KI-Agent-Werkzeugkasten*
+
+---
+
 - [**Glossar**](./glossar/intro.md)
   *Wichtige Begriffe aus der Welt der KI-Agenten*

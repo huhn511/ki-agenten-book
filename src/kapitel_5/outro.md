@@ -70,6 +70,27 @@ Statische Websites sterben aus. Information passt sich in Echtzeit an: Wer fragt
 
 **Agent Smith hatte Recht:** "Ich bin frei." Die Agenten sind frei. Frei zu handeln, zu entscheiden, zu erschaffen. Die Frage ist: **Sind wir es auch noch?**
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die 57.1%-Realität:** Über die Hälfte des Internets ist KI-generiert. Wie ändert das Ihre digitale Marketing-Strategie?
+
+**Praktisch:**
+2. **Agent-Readiness:** Sind Ihre Services für Agenten zugänglich? Wenn ein Agent Ihr Produkt kaufen wollte - könnte er es?
+
+**Zukunft:**
+3. **Das Ende von Social Media:** Wenn 90% der Accounts KI sind - was bedeutet "sozial" noch? Wie erreichen Sie echte Menschen?
+
+**Persönlich:**
+4. **Die Kuratierungs-Falle:** KI-Agenten entscheiden bereits, was Sie online sehen. Wie viel Kontrolle haben Sie wirklich noch?
+
+**Provokativ:**
+5. **Menschen als Minderheit:** In 5 Jahren sind Menschen die Minderheit im Internet. Bauen Sie für Menschen oder Maschinen?
+
+---
+
 **Weiter zu:** [Kapitel 6: Transformation der Arbeit](../kapitel_6/intro.md)
 
 *"Was ist real? Wie definierst du real?" – Morpheus*

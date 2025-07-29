@@ -68,6 +68,27 @@ Das Fundament der KI ist gelegt. Die Architektur ist verstanden. Die Werkzeuge s
 
 Morpheus hatte Recht – es geht um Kontrolle. Aber die Frage ist nicht mehr, ob Maschinen uns kontrollieren. **Die Frage ist, ob Sie die Maschinen kontrollieren, die Ihr Business transformieren werden.**
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die Vier-Säulen-Analyse:** Welche der vier KI-Säulen (Neuronale Netze, Sprachmodelle, Multimodal, Memory) könnte Ihren größten Wettbewerbsvorteil bringen? Warum?
+
+**Praktisch:**
+2. **Tool vs. Transformation:** Sind Sie noch in der Tool-Phase (ChatGPT für E-Mails) oder bewegen Sie sich zur Integration? Was hindert Sie am nächsten Schritt?
+
+**Zukunft:**
+3. **Memory-Revolution:** Wenn KI sich an jede Kundeninteraktion erinnern könnte - wie würde das Ihr Geschäftsmodell verändern?
+
+**Persönlich:**
+4. **CEO-Kompetenz:** Hand aufs Herz - verstehen Sie wirklich, wie LLMs funktionieren? Wenn nicht, wie wollen Sie strategische KI-Entscheidungen treffen?
+
+**Provokativ:**
+5. **Die Commodity-Falle:** Wenn Textgenerierung, Bildanalyse und Reasoning zur Commodity werden - was bleibt als IHRE unique value proposition?
+
+---
+
 **Weiter zu:** [Kapitel 3: Die Agenten-Revolution](../kapitel_3/intro.md)
 
 *"Was ist die Matrix? Kontrolle." – Morpheus*

@@ -3,6 +3,32 @@
 > *"Ich muss raus aus dieser Welt, dieser Zoo, dieser Gefängnis dieser Realität, wie auch immer man es nennen will."*  
 > — Agent Smith
 
+---
+
+### 📄 KAPITEL 4 AUF EINEN BLICK
+
+**Lesezeit:** ~22 Minuten | **Schwierigkeitsgrad:** ⭐⭐⭐⬆⬆ (Mittel)
+
+**Das erwartet Sie:**
+- Die Energiekrise der KI: 945 TWh bis 2030
+- Warum Ihre KI-Kosten explodieren werden
+- FP8-Quantisierung: 2x Effizienz ohne Qualitätsverlust
+- Neuromorphe Chips: 1000x weniger Energieverbrauch
+- €500B Infrastruktur-Investments bis 2030
+
+**Schlüssel-Insights:**
+✓ KI-Energieverbrauch = Japan's Gesamtverbrauch bis 2030
+✓ Hardware-Innovation entscheidet über KI-Zukunft
+✓ Edge Computing reduziert Kosten um 80%
+✓ Nachhaltige KI ist machbar - aber teuer
+
+**Für wen wichtig:**
+- **CEOs/CFOs:** Verstehen Sie die wahren Kosten von KI
+- **CTO/IT:** Infrastruktur-Planung für die nächsten 5 Jahre
+- **Sustainability Officers:** KI vs. Klimaziele ausbalancieren
+
+---
+
 **Mittwoch, 22. Januar 2025, 3:17 Uhr morgens. Rechenzentrum Frankfurt-Niederrad.**
 
 Die Klimaanlagen kämpfen verzweifelt gegen die Hitze. Dr. Elena Petrov, Leiterin des größten KI-Rechenzentrums Europas, starrt auf die Monitore. Die Temperatur steigt unaufhaltsam. **In 12 Minuten wird sie die Server abschalten müssen – oder riskieren, dass Hardware im Wert von 47 Millionen Euro schmilzt.**

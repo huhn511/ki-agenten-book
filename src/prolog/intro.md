@@ -3,6 +3,32 @@
 > *"Haben Sie das Gefühl, die Kontrolle zu verlieren? Zu wissen, was wirklich ist und was nicht? Das ist die Welt, wie sie heute existiert."*
 > — Agent Smith
 
+---
+
+### 📄 PROLOG AUF EINEN BLICK
+
+**Lesezeit:** ~15 Minuten | **Schwierigkeitsgrad:** ⭐⭐⬆⬆⬆ (Einstieg)
+
+**Das erwartet Sie:**
+- 57.1% des Internets ist bereits KI-generiert
+- Warum Sie täglich mit Agenten sprechen (ohne es zu wissen)
+- Die schockierende Realität von Deepfakes und KI-Stimmen
+- 2025: Das Jahr, in dem Agenten autonom werden
+- Ihre Wahl: Rote oder blaue Pille?
+
+**Schlüssel-Insights:**
+✓ KI-Revolution ist nicht Zukunft - sie läuft JETZT
+✓ Die Grenze Mensch/Maschine verschwimmt bereits
+✓ Unwissenheit ist keine Option mehr
+✓ Vorbereitung entscheidet über Gewinner und Verlierer
+
+**Für wen wichtig:**
+- **Jeden:** Dies betrifft Ihr tägliches Leben
+- **Skeptiker:** Die Fakten werden Sie überzeugen
+- **Entscheider:** Verstehen Sie die Dringlichkeit
+
+---
+
 **Es ist 7:23 Uhr an einem Dienstag im März 2025.** Sie trinken Ihren Kaffee, checken Ihre E-Mails und bemerken nicht, dass drei der acht Nachrichten in Ihrem Postfach von Maschinen geschrieben wurden. Der LinkedIn-Post Ihres Kollegen? KI-generiert. Das Foto Ihrer Nichte aus dem Urlaub? Deepfake. Der Kundenservice-Chat von gestern? Sie haben 23 Minuten lang mit einem Algorithmus gesprochen, der Ihnen überzeugend vorspielte, müde zu sein.
 
 **Während Sie diesen Absatz lesen, treffen 847 KI-Agenten allein in Deutschland Entscheidungen über Kreditvergaben, Bewerbungen und medizinische Diagnosen.** Sie kennen ihre Namen nicht. Sie haben sie nicht gewählt. Und sie wissen nicht einmal, dass sie existieren.

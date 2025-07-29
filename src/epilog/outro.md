@@ -95,4 +95,25 @@ Die Uhr tickt. Die Agenten arbeiten bereits. Die Zukunft formt sich in diesem Mo
 
 **Die Zeit ist JETZT.**
 
+---
+
+## 💭 Diskussionsfragen für Ihr Team
+
+**Strategisch:**
+1. **Die €15.7 Billionen Frage:** Wie positionieren Sie Ihr Unternehmen, um von diesem KI-getriebenen Wachstum zu profitieren?
+
+**Praktisch:**
+2. **Die drei Pillen:** Blau (passiv), Rot (aktiv), Schwarz (Ablehnung) - welche wählt Ihre Organisation? Warum?
+
+**Zukunft:**
+3. **Der menschliche Faktor:** Was können Menschen, was KI niemals können wird? Wie bauen Sie darauf Ihr Geschäftsmodell?
+
+**Persönlich:**
+4. **Das Vermächtnis:** Was wollen Sie Ihren Enkeln 2045 über Ihre Rolle in der KI-Revolution erzählen?
+
+**Provokativ:**
+5. **Die finale Entscheidung:** Morgen früh, 8 Uhr - was ist Ihre ERSTE konkrete Handlung, um Architekt statt Opfer zu werden?
+
+---
+
 *Dieses Buch endet hier. Ihre Geschichte beginnt jetzt. Schreiben Sie sie gut.*

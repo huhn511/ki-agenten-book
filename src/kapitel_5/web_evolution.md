@@ -20,6 +20,9 @@
 
 ### Agent Web: Das ausführende Internet (2025+)
 
+### [VISUAL: Web Evolution Timeline]
+*Diagramm-Konzept: Horizontale Timeline von 1990-2035 mit vier Überlappenden Wellen (Web 1.0-4.0). Jede Welle zeigt Schlüsseltechnologien, dominierende Player und User-Anzahl. Farbverlauf von Blau (statisch) zu Rot (autonom). Interaktive Hotspots mit Detailinfos zu wichtigen Ereignissen.*
+
 **Der nächste Evolutionssprung** bringt Autonomous Execution als fundamentales neues Element. **Charakteristika** sind AI-First Design, autonome Systeme, proaktive Dienstleistungen und nahtlose Agent-zu-Agent Kommunikation.
 
 **Technische Grundlagen** umfassen Computer Use Capabilities (Visual Recognition, UI Interaction, Workflow Execution), Agent Communication Protocols (MCP, A2A, Semantic Web) und Intent-Based Architecture mit Natural Language Interfaces und Goal-Oriented Execution.
@@ -27,6 +30,9 @@
 **Praktische Beispiele** zeigen die Macht des Agent Web: E-Commerce-Agenten finden das beste Smartphone unter 800€ durch automatische Shop-Durchsuchung und Preisvergleich. Travel-Planning-Agenten erstellen komplette Barcelona-Reisepläne mit Flug-, Hotel- und Routenoptimierung. Research-Agenten analysieren aktuelle Papers und erstellen personalisierte Zusammenfassungen zu Quantencomputing-Entwicklungen.
 
 ### Die neuen Akteure im Agent Web
+
+### [VISUAL: Agent Web Ecosystem Map]
+*Diagramm-Konzept: Kreisförmige Ecosystem-Map mit konzentrischen Ringen. Zentrum: Core Infrastructure (Cloud, AI Models). Zweiter Ring: Platform Players. Dritter Ring: Specialized Agents. Äußerer Ring: End Users. Verbindungslinien zeigen Datenflüsse und Abhängigkeiten. Größe der Knoten = Markteinfluss.*
 
 **AI-Native Companies** wie Zapier Intelligence, Perplexity, Character.AI und Anthropic sind von Grund auf für das Agent Web gebaut. **Traditional Companies** wie Google, Microsoft, Salesforce und Adobe transformieren sich zu AI-first Unternehmen. **The Long Tail Effect** erzeugt Millionen spezialisierter Agenten für Nischen-Expertise, Personal Assistance und Domain-spezifische Intelligenz.
 
@@ -39,6 +45,9 @@
 **Scalability** erfordert massive Infrastruktur für Milliarden von Agenten, kontinuierliche Datenströme und nachhaltige Energieversorgung. **Security & Trust** konfrontiert Agent Hijacking, Deepfake Interactions und Economic Attacks. **Interoperability** kämpft mit Protocol Fragmentation, Walled Gardens und Version Conflicts.
 
 ### Die Zukunft des Agent Web
+
+### [VISUAL: Agent Web Adoption Curve]
+*Diagramm-Konzept: S-Kurve der Agent-Adoption von 2025-2035. Y-Achse: % der Internetnutzer mit Agenten. X-Achse: Jahre. Annotationen für wichtige Meilensteine (10% = Early Adopters, 50% = Mainstream, 90% = Saturation). Farbcodierte Phasen: Innovation, Early Adoption, Mass Market, Maturity.*
 
 **2025-2027** bringt Agent Stores als neue App Stores und routinemäßige Delegation simpler Tasks. **2028-2030** führt zu Agent Mesh Networks, Autonomous Organizations und Digital Twins. **2030+** verspricht Seamless Integration, Predictive Execution und Collective Intelligence.
 

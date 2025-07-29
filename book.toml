@@ -2,8 +2,8 @@
 authors = ["Sebastian Heußer"]
 language = "de"
 src = "src"
-title = "Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert"
-description = "Eine umfassende Analyse der KI-Revolution mit Fokus auf autonome Agenten - von den technischen Grundlagen bis zu gesellschaftlichen Auswirkungen und Zukunftsszenarien."
+title = "Agent Economy: Die €100-Milliarden-Chance, die Ihre Konkurrenz bereits nutzt"
+description = "Wie autonome KI-Systeme Märkte revolutionieren – und wie Sie profitieren. Der unverzichtbare Business-Guide für das Jahr der Agenten 2025."
 
 [output.html]
 default-theme = "light"

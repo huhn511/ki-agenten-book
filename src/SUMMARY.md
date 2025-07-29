@@ -4,6 +4,15 @@
 
 [Inhaltsverzeichnis](./inhaltsverzeichnis.md)
 
+- [**Executive Summary**](./executive_summary.md)
+  *Die KI-Agenten Revolution in 10 Minuten*
+
+- [**Lesepfade**](./lesepfade.md)
+  *Ihr persönlicher Weg durch die Agent Economy*
+
+- [**Über den Autor**](./autor.md)
+  *Sebastian Heußer: An der Schnittstelle von KI und Business*
+
 ---
 
 - [**Prolog: Die Entstehung eines neuen Bewusstseins**](./prolog/intro.md)
@@ -83,6 +92,9 @@
   - [Epilog - Fazit](./epilog/outro.md)
 
 ---
+
+- [**Anhang: Branchenspezifische Agent-Playbooks**](./anhang_playbooks.md)
+  *Konkrete Implementierungsanleitungen für Finanz, Gesundheit und Produktion*
 
 - [**Glossar**](./glossar/intro.md)
   *Wichtige Begriffe aus der Welt der KI-Agenten*

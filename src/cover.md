@@ -1,10 +1,10 @@
-# Digitale Agenten: Wie KI unsere Wirklichkeit neu definiert
+# Agent Economy: Die €100-Milliarden-Chance, die Ihre Konkurrenz bereits nutzt
 
 ![Cover](./images/cover.png)
 
 *"Ich versuche deinen Geist zu befreien, Neo. Aber ich kann dir nur die Tür zeigen. Hindurchgehen musst du allein."* – Morpheus
 
-**Eine umfassende Analyse der KI-Revolution und autonomer Agenten**
+**Wie autonome KI-Systeme Märkte revolutionieren – und wie Sie profitieren**
 
 ---
 

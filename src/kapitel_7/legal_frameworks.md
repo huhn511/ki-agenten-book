@@ -6,6 +6,9 @@ Das **EU AI Act** ist das erste umfassende KI-Gesetz der Welt und übertrifft mi
 
 ### Das Risikopyramiden-Modell
 
+### [VISUAL: EU AI Act Risk Pyramid]
+*Diagramm-Konzept: 3D-Pyramide mit 4 Ebenen. Basis: Minimal Risk (grün, 85% aller KI). Mitte: Limited Risk (gelb, 10%). Oben: High Risk (orange, 4%). Spitze: Unacceptable Risk (rot, 1%). Interaktive Layer mit Beispielen, Anforderungen und Bußgeldern. Seitliche Annotations zeigen Compliance-Kosten pro Ebene.*
+
 **1. Unzulässige Risiken (Verboten)** mit kompletter Prohibition: Social Scoring wie in China, biometrische Echtzeit-Überwachung in öffentlichen Räumen, Subliminal Techniques zur Verhaltens-Beeinflussung, KI-Systeme zur Ausnutzung von Vulnerabilitäten. **Strafe:** Bis zu 35 Millionen Euro oder 7% des Jahresumsatzes.
 
 **2. Hochrisiko-KI-Systeme** für kritische Infrastrukturen, Bildung, Beschäftigung, Grunddienstleistungen, Strafverfolgung, Rechtspflege. **Anforderungen:** Risikomanagementsystem, hochwertige Trainingsdaten ohne Bias, vollständige Dokumentation, menschliche Aufsicht, CE-Kennzeichnung.
@@ -16,11 +19,17 @@ Das **EU AI Act** ist das erste umfassende KI-Gesetz der Welt und übertrifft mi
 
 ### Praktische Auswirkungen
 
+### [VISUAL: AI Compliance Cost Calculator]
+*Diagramm-Konzept: Interaktiver Kostenrechner als Sankey-Diagramm. Input: KI-System-Typ, Unternehmensgröße, Risikokategorie. Output: Compliance-Kosten aufgeschlüsselt nach Legal (30%), Technical (40%), Documentation (20%), Certification (10%). Vergleich Vorher/Nachher mit animiertem Balkendiagramm.*
+
 **Compliance-Kosten explodieren:** KI-gestütztes Bewerbungsscreening vor EU AI Act €50.000, nach EU AI Act €230.000 (Jahr 1). **KI-Compliance ist 4x teurer geworden als die KI selbst.**
 
 **Der Konformitätsbewertungsprozess:** Interne Prüfung, technische Dokumentation (40+ Pflichtangaben), EU-Konformitätserklärung, CE-Kennzeichnung. **Dauer:** 6-18 Monate, **Kosten:** €100.000-1.000.000.
 
 ### Der "Brussels Effect" bei KI
+
+### [VISUAL: Global AI Compliance Domino Effect]
+*Diagramm-Konzept: Weltkarte mit EU im Zentrum. Konzentrische Wellen zeigen Ausbreitung der EU-Standards. Timeline-Animation: 2024 (EU), 2025 (US Tech Giants), 2026 (Asia-Pacific), 2027 (Global Standard). Farbintensität zeigt Compliance-Level. Pfeile markieren Datenflüsse und regulatorische Einflüsse.*
 
 **Wie bei der DSGVO wird der EU AI Act zum globalen Standard** durch Kostenvorteil (ein globaler Standard billiger), Reputationsschutz (EU-Compliance signalisiert hohe Standards), Marktgröße (450 Millionen EU-Bürger), First-Mover Advantage (frühe Compliance schafft Vorteile).
 

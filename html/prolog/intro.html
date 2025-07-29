@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -174,9 +183,11 @@
 <p><em>"Haben Sie das Gefühl, die Kontrolle zu verlieren? Zu wissen, was wirklich ist und was nicht? Das ist die Welt, wie sie heute existiert."</em>
 — Agent Smith</p>
 </blockquote>
-<p>Agent Smith – die künstliche Intelligenz aus der Matrix, die die Menschen als "Virus" der Erde bezeichnet – stellt diese Frage mit eiskalter Präzision. Sein Charakter verkörpert die Angst vor einer Welt, in der Maschinen die Kontrolle übernommen haben. Doch die verstörende Wahrheit unserer Zeit ist eine andere: <strong>Wir haben die Kontrolle über die Realität bereits verloren, ohne es zu bemerken.</strong></p>
-<p>Die Grenze zwischen digitaler und realer Welt ist nicht nur verschwommen – sie existiert praktisch nicht mehr. Was in den Neunzigern als dystopische Science-Fiction galt, ist zur banalen Realität des Jahres 2025 geworden. Künstliche Intelligenz erscheint nicht nur menschlicher als Menschen – sie ist in vielen Bereichen bereits ununterscheidbar von ihnen geworden. Und das ist erst der Anfang.</p>
-<p><strong>Die Beispiele für diese neue Realität begegnen uns täglich, ohne dass wir sie als solche wahrnehmen:</strong></p>
+<p><strong>Es ist 7:23 Uhr an einem Dienstag im März 2025.</strong> Sie trinken Ihren Kaffee, checken Ihre E-Mails und bemerken nicht, dass drei der acht Nachrichten in Ihrem Postfach von Maschinen geschrieben wurden. Der LinkedIn-Post Ihres Kollegen? KI-generiert. Das Foto Ihrer Nichte aus dem Urlaub? Deepfake. Der Kundenservice-Chat von gestern? Sie haben 23 Minuten lang mit einem Algorithmus gesprochen, der Ihnen überzeugend vorspielte, müde zu sein.</p>
+<p><strong>Während Sie diesen Absatz lesen, treffen 847 KI-Agenten allein in Deutschland Entscheidungen über Kreditvergaben, Bewerbungen und medizinische Diagnosen.</strong> Sie kennen ihre Namen nicht. Sie haben sie nicht gewählt. Und sie wissen nicht einmal, dass sie existieren.</p>
+<p><strong>Willkommen in der neuen Realität.</strong> Agent Smith's Worte aus der Matrix waren keine Prophezeiung – sie waren eine Bestandsaufnahme. Wir haben die Kontrolle über das, was real ist, bereits verloren. Und das Schockierende daran ist: <strong>Die meisten Menschen merken es nicht einmal.</strong></p>
+<p><strong>Die verstörende Wahrheit:</strong> In den letzten 24 Monaten ist künstliche Intelligenz von einem futuristischen Konzept zu einer unsichtbaren Kraft geworden, die jeden Aspekt unseres Lebens durchdringt. Was in den Neunzigern als dystopische Science-Fiction galt, ist zur banalen Realität des Jahres 2025 geworden.</p>
+<p><strong>Hier sind drei Fakten, die Ihr Weltbild erschüttern werden:</strong></p>
 <h2 id="das-ende-der-gewissheit"><a class="header" href="#das-ende-der-gewissheit">Das Ende der Gewissheit</a></h2>
 <p><strong>57,1% des Internetinhalts</strong> ist bereits von Algorithmen erstellt, doch die meisten Nutzer ahnen nicht, dass sie täglich mit Maschinen interagieren, die sich als Menschen ausgeben.</p>
 <p><strong>Eine Mutter erhält einen Anruf ihres Sohnes, der um Hilfe bittet</strong> – seine Stimme, seine Betonung, sogar das nervöse Lachen sind perfekt nachgeahmt. Erst später stellt sich heraus: Ihr Sohn war zu diesem Zeitpunkt im Kino. KI-Stimmen werden für Betrügereien eingesetzt, die so perfekt klingen, dass selbst enge Familienangehörige in Sekundenschnelle getäuscht werden. Die benötigte Audioprobe? Drei Sekunden von der Mailbox genügen.</p>
@@ -188,7 +199,25 @@
 <p><strong>2025 wurde von führenden Tech-Unternehmen zum "Jahr der Agenten" erklärt</strong> – der Zeitpunkt, an dem KI nicht mehr nur auf Befehle wartet, sondern selbstständig handelt, plant und Entscheidungen trifft. OpenAI's "Operator" navigiert autonom durch Browser, Microsoft's Agent Store bietet über 70 spezialisierte digitale Assistenten, und Google's Gemini 2.0 denkt proaktiv mit.</p>
 <p><strong>Die zentrale Frage unserer Zeit</strong> lautet nicht mehr: "Kann eine Maschine denken?" Sie lautet: "Wie definieren wir Authentizität, wenn Maschinen menschlicher erscheinen als Menschen?"</p>
 <p>Agent Smith's Worte aus der Matrix gewinnen eine neue Bedeutung: Wir verlieren tatsächlich die Kontrolle darüber, was real ist und was nicht. Aber im Gegensatz zum Film ist dies keine dystopische Zukunftsvision – es ist unsere Gegenwart.</p>
-<p><strong>Willkommen in der Welt der digitalen Agenten. Willkommen in unserer neuen Realität.</strong></p>
+<h2 id="was-sie-in-diesem-buch-erwartet"><a class="header" href="#was-sie-in-diesem-buch-erwartet">Was Sie in diesem Buch erwartet</a></h2>
+<p><strong>Dieses Buch ist kein weiterer KI-Ratgeber.</strong> Es ist ein Survival-Guide für eine Welt, in der die Grenzen zwischen Mensch und Maschine verschwimmen. Sie erfahren:</p>
+<ul>
+<li><strong>Wie Sie KI-Agenten erkennen</strong> und von echten Menschen unterscheiden</li>
+<li><strong>Welche Branchen und Jobs</strong> in den nächsten 3 Jahren massiv transformiert werden</li>
+<li><strong>Konkrete Strategien</strong>, um in der KI-Revolution nicht nur zu überleben, sondern zu gewinnen</li>
+<li><strong>Die Matrix-Methode</strong>: Ein Framework für Entscheidungen in der digitalen Realität</li>
+<li><strong>Europas Chancen</strong> in einer von USA und China dominierten KI-Welt</li>
+</ul>
+<p><strong>Warum ausgerechnet die Matrix als Metapher?</strong> Weil Morpheus recht hatte: <strong>"Niemand kann erklärt bekommen, was die Matrix ist. Du musst sie selbst erfahren."</strong> Die KI-Revolution lässt sich nicht durch Statistiken verstehen – sie muss erlebt werden.</p>
+<p><strong>Die zentrale These dieses Buches:</strong> Wir stehen nicht vor der KI-Revolution. <strong>Wir sind mittendrin.</strong> Die Frage ist nicht, ob sie kommt, sondern ob Sie vorbereitet sind.</p>
+<p><strong>Nach der Lektüre werden Sie:</strong></p>
+<ul>
+<li>Die Welt mit anderen Augen sehen</li>
+<li>Konkrete Schritte für Ihre Karriere/Ihr Unternehmen haben</li>
+<li>Verstehen, wie Sie die KI-Revolution zu Ihrem Vorteil nutzen</li>
+</ul>
+<p><strong>Rote oder blaue Pille?</strong> Die Entscheidung liegt bei Ihnen. Aber ab jetzt gibt es kein "Unwissen" mehr.</p>
+<p><strong>Willkommen in der Welt der digitalen Agenten. Willkommen in der Matrix.</strong></p>
 
                     </main>
 
@@ -236,6 +265,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

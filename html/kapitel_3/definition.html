@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -184,6 +193,59 @@
 <p>Der Agent würde Flüge recherchieren, Hotels basierend auf Lage und Bewertungen suchen, Sehenswürdigkeiten mit optimalen Routen planen, Restaurant-Reservierungen nach Präferenzen machen, Wetter-basierte Aktivitäten anpassen und das Budget kontinuierlich verfolgen.</p>
 <h3 id="real-world-agents-2025"><a class="header" href="#real-world-agents-2025">Real-World Agents (2025)</a></h3>
 <p>Bereits aktive Systeme umfassen OpenAI Operator (Browser-Navigation), Anthropic Computer Use (Desktop-Automatisierung), Microsoft Copilot Studio (Unternehmens-Workflows), Google Gemini Agents (multimodale Problemlösung) und Salesforce Agentforce (CRM und Kundenservice).</p>
+<pre><code>                🤖 KI-AGENTEN EVOLUTION ZEITLINIE 🤖
+
+1950s    BASIC AUTOMATION       🔧 Einfache Regelbasierte Systeme
+         |                         • Thermostate, Ampelsteuerung
+         |                         • Fest programmierte Wenn-Dann-Logik
+         |
+1960s    EARLY AI AGENTS        🧠 Erste KI-Experimente  
+         |                         • ELIZA (Gesprächsbot)
+         |                         • SHAKEY (Roboter mit Planung)
+         |
+1980s    EXPERT SYSTEMS         📚 Wissensbasierte Systeme
+         |                         • DENDRAL (Molekülanalyse)
+         |                         • MYCIN (Medizinische Diagnose)
+         |
+2000s    INTERNET AGENTS        🌐 Web-Services &amp; Crawler
+         |                         • Suchmaschinen-Bots
+         |                         • E-Commerce Empfehlungen
+         |
+2010s    MOBILE ASSISTANTS      📱 Sprachgesteuerte Helfer
+         |                         • Siri, Alexa, Google Assistant
+         |                         • Begrenzte Domänen, Sprachverständnis
+         |
+2020     LLM-REVOLUTION         🚀 Große Sprachmodelle
+         |                         • GPT-3: Textverständnis &amp; Generation
+         |                         • Durchbruch in Natürlicher Sprache
+         |
+2023     MULTIMODAL AGENTS      👁️ Sehen, Hören, Sprechen
+         |                         • GPT-4V: Vision + Sprache
+         |                         • Claude: Dokumenten-Analyse
+         |
+2024     AUTONOMOUS ACTION      🔥 Eigenständiges Handeln
+         |                         • Computer Use (Anthropic)
+         |                         • Code Interpreter (OpenAI)
+         |
+2025 ────AGENTIC AI ERA────     ⚡ Zielorientierte Autonomie
+         |                         • OpenAI Operator (Browser)
+         |                         • Microsoft Copilot Studio
+         |                         • Salesforce Agentforce
+         |
+2026+    AGENT ECOSYSTEMS       🌟 Kollaborative Multi-Agent-Systeme
+                                   • Spezialisierte Agent-Teams
+                                   • Automatisierte Workflows
+                                   • Agent-zu-Agent Kommunikation
+
+         ┌───────────────────────────────────────────────────────────┐
+         │                 🎯 ENTWICKLUNGSSPRÜNGE                   │
+         │                                                           │
+         │ 1950-2000: Regelbasiert → Wissensbasiert (50 Jahre)      │
+         │ 2000-2020: Web-Integration → Mobile AI (20 Jahre)        │
+         │ 2020-2025: LLM-Revolution → Autonome Agenten (5 Jahre)   │
+         │ 2025+: Agentic AI → Multi-Agent-Ökosysteme (?)          │
+         └───────────────────────────────────────────────────────────┘
+</code></pre>
 <p><strong>Die Realität:</strong> Agenten arbeiten bereits in Millionen von Unternehmen und lösen echte Probleme. Der nächste Schritt: <strong>Agent-Ökosysteme</strong> mit spezialisierten Agenten, die zusammenarbeiten.</p>
 
                     </main>
@@ -232,6 +294,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

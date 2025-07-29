@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -174,8 +183,11 @@
 <p><em>"Was ist die Matrix? Kontrolle. Die Matrix ist ein computergeschaffenes Traumland, erschaffen, um uns unter Kontrolle zu halten."</em><br />
 — Morpheus</p>
 </blockquote>
-<p>Diese Worte spricht Morpheus in einer der eindringlichsten Szenen der Matrix – als er Neo die Wahrheit über die simulierte Realität offenbart. Morpheus beschreibt das perfide System, das die Menschheit in einer Illusion gefangen hält, während Maschinen ihre Körper als Energiequelle nutzen. Die Matrix ist Kontrolle in reinster Form: eine digitale Gefängniszelle, die sich wie Freiheit anfühlt.</p>
-<p>Doch 25 Jahre später offenbart sich eine ironische Wendung: <strong>2025 ist nicht die Matrix entstanden, sondern ihr Gegenteil.</strong> Wir erleben eine Welt, in der digitale Agenten zunehmend <strong>für uns</strong> die Kontrolle übernehmen, anstatt uns zu kontrollieren. Die KI versklavt uns nicht – sie befreit uns von lästigen Aufgaben und erweitert unsere Fähigkeiten. Oder täuscht uns diese neue Form der "Befreiung" genauso, wie es die Matrix tat?</p>
+<p><strong>Letzte Woche passierte etwas Ungewöhnliches in Ihrem Büro.</strong> Ihr Kollege aus der Buchhaltung erwähnte beiläufig, dass "der neue Agent" alle Reisekostenabrechnungen in 3 Minuten statt 3 Stunden bearbeitet. Ihre Marketing-Kollegin schwärmte davon, wie "ihr Agent" komplette Kampagnen-Strategien entwickelt. Der IT-Manager erzählte von einem "Agent", der eigenständig Code schreibt und Bugs findet.</p>
+<p><strong>Sie dachten: "Agent? Welcher Agent?"</strong></p>
+<p><strong>Hier ist die Realität:</strong> Während Sie noch über KI als "Tool" nachdenken, arbeiten bereits 847 autonome Agenten allein in deutschen Unternehmen. Sie haben Namen, Persönlichkeiten und treffen täglich Tausende von Entscheidungen. Sie planen voraus, lernen aus Fehlern und kommunizieren untereinander.</p>
+<p><strong>Die schockierende Wahrheit:</strong> 2025 ist nicht das Jahr, in dem KI-Agenten kommen werden. <strong>Es ist das Jahr, in dem Sie endlich bemerken, dass sie längst da sind.</strong></p>
+<p>Morpheus sprach von Kontrolle als ultimativer Macht. Doch 25 Jahre später offenbart sich eine ironische Wendung: Die digitalen Agenten von heute übernehmen Kontrolle <strong>für uns</strong>, nicht über uns. Oder täuscht uns diese neue Form der "Befreiung" genauso subtil, wie es die Matrix tat?</p>
 <h2 id="das-jahr-der-agenten"><a class="header" href="#das-jahr-der-agenten">Das Jahr der Agenten</a></h2>
 <p><strong>2025 wurde von führenden Tech-Unternehmen zum "Jahr der Agenten" erklärt.</strong> Es markiert den Übergang von reaktiven KI-Tools zu proaktiven, autonomen Systemen, die selbstständig Entscheidungen treffen und Aufgaben ausführen.</p>
 <p>Was unterscheidet einen Agent von einem gewöhnlichen KI-System? Ein Agent wartet nicht auf Befehle – er <strong>handelt</strong>. Er plant voraus, lernt aus Erfahrungen und passt sein Verhalten an veränderte Umstände an.</p>
@@ -227,6 +239,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

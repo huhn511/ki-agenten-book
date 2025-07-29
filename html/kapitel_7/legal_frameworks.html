@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -184,6 +193,53 @@
 <p><strong>Wie bei der DSGVO wird der EU AI Act zum globalen Standard</strong> durch Kostenvorteil (ein globaler Standard billiger), Reputationsschutz (EU-Compliance signalisiert hohe Standards), Marktgröße (450 Millionen EU-Bürger), First-Mover Advantage (frühe Compliance schafft Vorteile).</p>
 <p><strong>Bereits sichtbar:</strong> Leading AI Companies EU AI Act-Compliance für alle Märkte, Tech Giants "AI Principles" orientieren sich an EU-Vorgaben, Cloud Providers "Responsible AI Frameworks" übernehmen EU-Standards.</p>
 <h3 id="internationale-regulierungsansätze"><a class="header" href="#internationale-regulierungsansätze">Internationale Regulierungsansätze</a></h3>
+<pre><code>             🌍 GLOBALE KI-REGULIERUNGS-LANDSCHAFT 🌍
+
+2019   │     ●                           ● ERSTE ETHIK-RICHTLINIEN
+       │                                   • OECD AI Principles
+       │                                   • Partnership on AI Tenets
+       │
+2020   │         ●─────────●             ● US EXECUTIVE ORDERS
+       │                                   • National AI Initiative
+       │                                   • NIST AI Framework
+       │
+2021   │     ●           ●               ● EU BEGINNT AI ACT
+       │                     ●             • Proposal Draft
+       │                                   • China: Algorithmic Mgmt
+       │
+2022   │                 ●               ● DEEPFAKE-REGULIERUNG
+       │             ●                     • China: Deep Synthesis
+       │                                   • US: State-Level Laws
+       │
+2023   │         ●   ●       ●           ● GENERATIVE AI FOCUS
+       │                         ●         • ChatGPT Global Impact
+       │                                   • EU AI Act Verhandlungen
+       │
+2024   │ ●           ●   ●   ●   ●       ● ENFORCEMENT BEGINNT
+       │                             ●     • EU AI Act verabschiedet
+       │                                   • US Executive Order 14110
+       │                                   • UK AI White Paper
+       │
+2025   ├─────────────────────────────────● VOLLSTÄNDIGE UMSETZUNG
+       │ ████████████████████████████████  • EU AI Act in Kraft
+       │                                   • Global Compliance Wave
+       │                                   • Strafverfolgung beginnt
+
+       EU ████████████████████████████████ STRENGSTE REGULIERUNG
+       USA ██████████████                  MARKT-ORIENTIERT
+       UK ████████████                     PRINZIPIEN-BASIERT
+       CHINA ██████████████████            STAAT-KONTROLLIERT
+       GLOBAL ████████                     MINIMALE STANDARDS
+
+       ┌──────────────────────────────────────────────────────────┐
+       │               🎯 REGULIERUNGS-ANSÄTZE                   │
+       │                                                          │
+       │ 🇪🇺 EU: Menschenrechte First, max. Bußgelder 35M€      │
+       │ 🇺🇸 USA: Innovation First, sektorspezifisch           │
+       │ 🇬🇧 UK: Flexibilität First, Sandbox-Modell           │
+       │ 🇨🇳 China: Kontrolle First, staatliche Aufsicht       │
+       └──────────────────────────────────────────────────────────┘
+</code></pre>
 <p><strong>USA: Innovationsfreundlich, marktorientiert</strong> mit Executive Orders statt Gesetze, sektorspezifischer Regulierung, freiwilligen Selbstverpflichtungen, NIST AI Risk Management Framework.</p>
 <p><strong>China: Staatlich kontrolliert, sicherheitsorientiert</strong> mit Algorithmic Recommendation Management Provisions, Deep Synthesis Provisions (Deepfake-Regulierung), Draft Measures for Generative AI Services, zentraler Kontrolle über KI-Entwicklung.</p>
 <p><strong>Großbritannien: Pragmatisch, prinzipienbasiert</strong> mit Pro-Innovation Regulation Ansatz, existing Regulators erweitern Mandate, AI White Paper mit flexiblen Prinzipien, Sandbox-Ansätze für Innovation.</p>
@@ -247,6 +303,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

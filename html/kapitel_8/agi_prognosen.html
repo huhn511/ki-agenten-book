@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -189,6 +198,57 @@
 <p><strong>Google:</strong> $100+ Milliarden AI-Investment über 4 Jahre, interne Leaks: "Gemini will reach AGI-level capabilities", DeepMind-Integration für AGI-Push. Internal Memo: "We may have 12-18 months before OpenAI achieves something indistinguishable from AGI."</p>
 <p><strong>China:</strong> Baidu's ERNIE Bot "competitive with GPT-4 in Chinese", AGI bis 2030 als offizielle Regierungs-Timeline, $20 Milliarden AI-Investment 2023-2027.</p>
 <h2 id="meilensteine-auf-dem-weg"><a class="header" href="#meilensteine-auf-dem-weg">Meilensteine auf dem Weg</a></h2>
+<pre><code>              🚀 AGI-ENTWICKLUNGSPFADE: DREI SZENARIEN 🚀
+
+                  SKALIERUNG        EFFIZIENZ        EMBODIMENT
+                  (Scale-First)     (Efficiency)     (Integration)
+2025   ┌─────────────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
+       │ 🔥 AGENTS ÜBERALL   │  │ 🧠 NEUE ARCHITEKT. │  │ 🤖 ROBOTER-PILOTS  │
+       │ • OpenAI Operator   │  │ • Attention Beyond  │  │ • Figure Humanoids  │
+       │ • Computer Use Mastery│  │ • Memory Systems   │  │ • Tesla Bot 2.0     │
+       │ • 90%+ Taskaccuracy │  │ • Sample Efficiency │  │ • Real-World Learn  │
+       └─────────────────────┘  └─────────────────────┘  └─────────────────────┘
+              │                         │                         │
+2027   ┌─────────────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
+       │ ⚡ SUPER-MODELLE    │  │ 💡 ALGORITHM-LEAP   │  │ 🏠 HOME ASSISTANTS │
+       │ • GPT-5: 100T Param │  │ • o3-Nachfolger     │  │ • Boston Dynamics   │
+       │ • $5B Training Cost │  │ • Reasoning Chains  │  │ • Everyday Tasks    │
+       │ • PhD-Level Perform │  │ • Expert-Level Code │  │ • Physical-Digital  │
+       └─────────────────────┘  └─────────────────────┘  └─────────────────────┘
+              │                         │                         │
+2030   ┌─────────────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
+       │ 🏆 AGI ERREICHT     │  │ 🎯 SMART AGI        │  │ 🌍 EMBODIED AGI     │
+       │ • Brute Force Scale │  │ • Elegant Solutions │  │ • World-Interaction │
+       │ • Massive Energy    │  │ • Energy Efficient  │  │ • Human-like Learn  │
+       │ • $1T+ Infrastructure│  │ • Accessible AI     │  │ • Multi-modal Real  │
+       └─────────────────────┘  └─────────────────────┘  └─────────────────────┘
+              │                         │                         │
+              ▼                         ▼                         ▼
+       ┌─────────────────────────────────────────────────────────────────┐
+       │                    🎆 KONVERGENZ ZONE 🎆                        │
+       │                                                                 │
+       │  2030-2035: ALLE PFADE FÜHREN ZU SUPERINTELLIGENZ             │
+       │  • Recursive Self-Improvement                                   │
+       │  • Autonome Forschung &amp; Entwicklung                           │
+       │  • Technologische Singularität                                 │
+       │                                                                 │
+       └─────────────────────────────────────────────────────────────────┘
+
+       ┌───────────────────────────────────────────────────────────────┐
+       │                📊 EXPERT-CONSENSUS EVOLUTION                 │
+       │                                                               │
+       │ 2019: AGI bis 2040 (50% Wahrscheinlichkeit)                 │
+       │ 2022: AGI bis 2035 (nach ChatGPT-Schock)                    │
+       │ 2024: AGI bis 2032 (nach o1, o3 Durchbrüchen)              │
+       │ 2025: AGI bis 2027 (aktuelle Prognose-Spitze)              │
+       │                                                               │
+       │ 🎯 KRITISCHE MEILENSTEINE:                                   │
+       │ • 2025: Agent-Ökosysteme mainstream                         │
+       │ • 2027: Professionelle Performance                          │
+       │ • 2030: Allgemeine menschliche Intelligenz                 │
+       │ • 2035: Superintelligenz wahrscheinlich                    │
+       └───────────────────────────────────────────────────────────────┘
+</code></pre>
 <p><strong>2025: The Year of Agents</strong> - Mainstream Agent Adoption, Computer Use Mastery, 90%+ Erfolgsrate bei komplexen Aufgaben.</p>
 <p><strong>2026-2027: Approaching AGI</strong> - Professional-level Performance in spezifischen Domänen, nahtlose multimodale Integration, komplexe Langzeit-Strategien.</p>
 <p><strong>2028-2030: AGI Threshold</strong> - General Problem Solving so gut wie Menschen, autonome wissenschaftliche Forschung, originäre kulturelle Beiträge.</p>
@@ -248,6 +308,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

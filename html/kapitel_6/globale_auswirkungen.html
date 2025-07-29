@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -178,9 +187,34 @@
 <p><strong>Geschwindigkeit der Transformation:</strong> Industrielle Revolution 100+ Jahre, Computer Revolution 30+ Jahre, Internet Revolution 15+ Jahre, <strong>KI Revolution: 3-5 Jahre</strong> für massive Disruption. <strong>Wir erleben Jahrhunderte von Veränderung in wenigen Jahren.</strong></p>
 <p><strong>Regionale Unterschiede:</strong> Entwickelte Länder (30-40% Jobs betroffen), Schwellenländer (15-25%), Entwicklungsländer (5-15%) je nach Anteil von Wissensarbeit und Adoptionsgeschwindigkeit.</p>
 <h3 id="die-anatomie-der-disruption"><a class="header" href="#die-anatomie-der-disruption">Die Anatomie der Disruption</a></h3>
-<p><strong>Hochrisiko (80-100% Automatisierungspotential):</strong> Data Entry Clerks 95%, Telemarketing 99%, Tax Preparers 99%, Insurance Underwriters 99%, Bank Tellers 98%.</p>
-<p><strong>Mittleres Risiko (30-80%):</strong> Accountants 70%, Paralegals 75%, Radiologists 65%, Financial Analysts 60%, Journalists 55%.</p>
-<p><strong>Niedriges Risiko (0-30%):</strong> Elementary School Teachers 15%, Social Workers 10%, Therapists 5%, Creative Artists 10%, Emergency Responders 5%.</p>
+<pre><code>        📊 AUTOMATISIERUNGSRISIKO NACH BERUFSGRUPPEN 📊
+        
+   HOHES RISIKO (80-100%)          MITTLERES RISIKO (30-80%)      NIEDRIGES RISIKO (0-30%)
+   ┌─────────────────────┐         ┌─────────────────────┐         ┌─────────────────────┐
+   │ ████████████████████│99%      │ ██████████████      │70%      │ ███                 │15%
+   │ Telemarketing       │         │ Buchhalter          │         │ Grundschullehrer    │
+   │                     │         │                     │         │                     │
+   │ ███████████████████ │99%      │ ███████████████     │75%      │ ██                  │10%
+   │ Steuervorbereiter   │         │ Rechtsanwaltsfah.   │         │ Sozialarbeiter      │
+   │                     │         │                     │         │                     │
+   │ ███████████████████ │99%      │ █████████████       │65%      │ █                   │5%
+   │ Versicher.-Prüfer   │         │ Radiologen          │         │ Therapeuten         │
+   │                     │         │                     │         │                     │
+   │ ██████████████████  │98%      │ ████████████        │60%      │ ██                  │10%
+   │ Bank-Schalter       │         │ Finanzanalysten     │         │ Kreative Künstler   │
+   │                     │         │                     │         │                     │
+   │ ███████████████████ │95%      │ ███████████         │55%      │ █                   │5%
+   │ Datenerfassung      │         │ Journalisten        │         │ Notfallsanitäter    │
+   └─────────────────────┘         └─────────────────────┘         └─────────────────────┘
+   
+   ⚠️  ÜBERRASCHENDE GEFÄHRDUNGEN:                🛡️  RESILIENTE BERUFE:
+   ┌─────────────────────────────┐                ┌─────────────────────────────┐
+   │ 🖥️ Programmierer      48%    │                │ 🔧 Klempner           5%    │
+   │ ⚖️ Anwälte           35%    │                │ ✂️ Friseure           8%    │
+   │ 🩺 Ärzte             25%    │                │ 🛠️ Handwerker         12%   │
+   │ 👨‍🏫 Lehrer           20%    │                │ 💼 Manager            15%   │
+   └─────────────────────────────┘                └─────────────────────────────┘
+</code></pre>
 <p><strong>Die Überraschungen:</strong> Programmers 48% Risiko (KI kann coden), Lawyers 35% (Legal AI), Doctors 25% (Diagnostic AI), Teachers 20% (AI Tutoring) versus resiliente Jobs wie Plumbers 5%, Hair Stylists 8%, Therapists 5%, Managers 15%.</p>
 <h3 id="branchenspezifische-analyse"><a class="header" href="#branchenspezifische-analyse">Branchenspezifische Analyse</a></h3>
 <p><strong>Finanzdienstleistungen: Die erste Domino</strong> fällt wegen datenbasierter, standardisierter und digitaler Struktur. 2024-2025 automatisierte Finanzanalyse, 2025-2027 KI-Investment-Entscheidungen, 2027-2030 vollautomatische Trading-Algorithmen.</p>
@@ -254,6 +288,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

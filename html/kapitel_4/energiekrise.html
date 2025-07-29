@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -174,6 +183,39 @@
 <h3 id="der-exponentielle-energiehunger"><a class="header" href="#der-exponentielle-energiehunger">Der exponentielle Energiehunger</a></h3>
 <p>Ein einziges ChatGPT-Query verbraucht <strong>10x mehr Energie</strong> als eine Google-Suche. Das Training von GPT-4 kostete schätzungsweise <strong>25-50 Millionen Dollar</strong> - hauptsächlich für Strom.</p>
 <p><strong>Globaler KI-Energieverbrauch 2024:</strong> 240 TWh jährlich (entspricht Argentinien), bereits 4% des weltweiten Stromverbrauchs mit Verdopplung alle 18 Monate. <strong>Prognosen für 2030:</strong> 945 TWh jährlich erwartet - 16% des weltweiten Stromverbrauchs, mehr als Deutschland und Frankreich kombiniert.</p>
+<pre><code>            🔋 KI-ENERGIEVERBRAUCH: EXPONENTIELLES WACHSTUM 🔋
+                          
+    2022 ████▌                           130 TWh (2.2% global)
+         
+    2023 ███████▌                        190 TWh (3.1% global)
+         
+    2024 ████████████                     240 TWh (4.0% global)
+         
+    2025 ████████████████████             380 TWh (6.3% global)
+         
+    2026 ██████████████████████████████   590 TWh (9.8% global)
+         
+    2027 ███████████████████████████████████████████████  730 TWh (12.1% global)
+         
+    2028 ██████████████████████████████████████████████████████  820 TWh (13.6% global)
+         
+    2029 ████████████████████████████████████████████████████████████  890 TWh (14.8% global)
+         
+    2030 ██████████████████████████████████████████████████████████████████  945 TWh (16.0% global)
+    
+    ┌──────────────────────────────────────────────────────────────────────────┐
+    │                        📊 VERGLEICHSWERTE                            │
+    │ 🇦🇷 Argentinien (2024): 240 TWh  │  🇩🇪 Deutschland: 545 TWh         │
+    │ 🇫🇷 Frankreich: 450 TWh          │  🇬🇧 Großbritannien: 300 TWh      │
+    │ 🇰🇷 Südkorea: 520 TWh            │  🇨🇦 Kanada: 640 TWh              │
+    └──────────────────────────────────────────────────────────────────────────┘
+    
+    ⚠️  KRITISCHE SCHWELLENWERTE:
+    • 2025: Übertrifft Großbritannien
+    • 2026: Übertrifft Frankreich  
+    • 2029: Übertrifft Deutschland
+    • 2030: Übertrifft Deutschland + Frankreich kombiniert
+</code></pre>
 <p><strong>Microsoft's KI-Infrastruktur</strong> expandiert mit 20+ neuen Rechenzentren (2024), $50 Milliarden Investment in KI-Hardware und 300% Energieverbrauchssteigerung seit ChatGPT-Launch. <strong>Google's Energy Footprint</strong> zeigt 48% Anstieg durch KI (2023-2024), gefährdete Klimaziele und erstmals steigende CO2-Emissionen bei 10 Millionen Servern weltweit.</p>
 <h3 id="die-hardware-realität"><a class="header" href="#die-hardware-realität">Die Hardware-Realität</a></h3>
 <p><strong>NVIDIA H100-Cluster</strong> verbrauchen 700W pro GPU bei Vollauslastung. Typische Training-Setups mit 1,000+ GPUs bedeuten 700 kW permanent und jährliche Stromkosten von $500,000+ pro Cluster.</p>
@@ -248,6 +290,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>
